@@ -1,0 +1,13 @@
+{
+    "name": "name/project-name",
+    "type": "project",
+    "require": {
+        "facebook/php-business-sdk": "^11.0"
+    },
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "your@email.com"
+        }
+    ]
+}
