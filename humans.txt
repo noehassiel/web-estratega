@@ -2,9 +2,7 @@
 # The humans responsible & technology colophon
 
 # TEAM
-
-    <Roberto Arturo Rivera Alcalde> -- <Front end developer> -- <https://github.com/Rakdo>
-    <Jorge E. Peña Lama> -- <Fullstack developer> -- <https://github.com/jorgeepena>
+    <Noé Hassiel Monterrosas Bandala> -- <Fullstack developer> -- <https://github.com/noehassiel>
 
 # THANKS
 

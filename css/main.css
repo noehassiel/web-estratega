@@ -127,6 +127,22 @@ small{
   h1 {
     font-size: 3rem;
   }
+
+  h2{
+    font-size: 2.6rem;
+  }
+
+  h3{
+    font-size: 2.2rem;
+  }
+
+  h4{
+    font-size: 1.8rem;
+  }
+
+  h5{
+    font-size: 1.2rem;
+  }
 }
 
 .text-green{
@@ -602,6 +618,10 @@ canvas {
   width: 50%;
 }
 
+.product-slide .p-logo h5{
+  text-transform: uppercase;
+}
+
 .p-logo.magnus{
   background:#08289D ;
 }
@@ -885,6 +905,10 @@ footer small{
 
 
 @media (max-width:64em) {
+  .product-slide .p-logo{
+    height: 200px;
+  }
+
   .s-indent {
     padding-top: 30%;
   }

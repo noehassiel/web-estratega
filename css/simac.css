@@ -1,0 +1,45 @@
+.s-section.feature-top{
+  height: 100% !important;
+  margin-top: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71%, #161618), to(rgba(28, 28, 30, 0)));
+  background-image: linear-gradient(180deg, #161618 71%, rgba(28, 28, 30, 0));
+}
+
+#name canvas{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 40vh;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.s-con.feature-top{
+  position: relative;
+  z-index: 2;
+  height: auto;
+  margin-top: 275px;
+}
+
+.s-indent-std{
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 30%;
+}
+
+.s-indent-std.feature-top{
+  padding-top: 5%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}

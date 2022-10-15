@@ -8,8 +8,7 @@ function rgb(r, g, b) {
 document.addEventListener("DOMContentLoaded", function(e) {
 
     const renderer = new THREE.WebGLRenderer();
-    renderer.setSize( window.innerWidth, window.innerHeight );
-    document.body.appendChild( renderer.domElement )
+    document.getElementById("name").appendChild(renderer.domElement);
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
@@ -35,10 +34,10 @@ document.addEventListener("DOMContentLoaded", function(e) {
     let geometry = new THREE.PlaneGeometry(window.innerWidth / 2, 400, 100, 100);
     let material = new THREE.ShaderMaterial({
         uniforms: {
-            u_bg: {type: 'v3', value: rgb(162, 138, 241)},
-            u_bgMain: {type: 'v3', value: rgb(162, 138, 241)},
-            u_color1: {type: 'v3', value: rgb(162, 138, 241)},
-            u_color2: {type: 'v3', value: rgb(82, 31, 241)},
+            u_bg: {type: 'v3', value: rgb(105, 176, 47)},
+            u_bgMain: {type: 'v3', value: rgb(105, 176, 47)},
+            u_color1: {type: 'v3', value: rgb(105, 176, 47)},
+            u_color2: {type: 'v3', value: rgb(44, 77, 17)},
             u_time: {type: 'f', value: 0},
             u_randomisePosition: { type: 'v2', value: randomisePosition }
         },
