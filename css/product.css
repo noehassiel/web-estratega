@@ -5,6 +5,23 @@
   background-image: linear-gradient(180deg, #161618 71%, rgba(28, 28, 30, 0));
 }
 
+.s-con.feature-top {
+  position: relative;
+  z-index: 2;
+  height: auto;
+  margin-top: 275px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.s-indent-sdt.feature-top {
+  padding-top: 5%;
+}
+
+.s-indent-sdt.feature-top .logo{
+  width: 70%;
+}
+
 #name canvas{
   position: absolute;
   left: 0;
@@ -17,29 +34,24 @@
   height: 40vh;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  animation: color 2s .4s;
 }
 
-.s-con.feature-top{
-  position: relative;
-  z-index: 2;
-  height: auto;
-  margin-top: 275px;
+@keyframes color {
+  0%{
+    height: 80vh;
+  }
+
+  100%{
+    height: 40vh;
+  }
 }
 
-.s-indent-std{
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 30%;
+
+@media (max-width:64em) {
+  .s-con.feature-top {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
 }
 
-.s-indent-std.feature-top{
-  padding-top: 5%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}

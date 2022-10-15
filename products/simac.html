@@ -22,6 +22,7 @@
   <!--Bundle CSS-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
   <link rel="stylesheet" href="../css/locomotive-scroll.css">
 
   <!-- Link Swiper's CSS -->
@@ -33,17 +34,158 @@
 
 </head>
 
-<body class="smooth-scroll">
+<body>
 
-  <section id="name" class="s-section feature-top">
-    <div class="s-con feature-top s-black">
-      <div class="s-content">
-        <div class="s-indent-sdt feature-top">
-          <h1>simac</h1>
+  <header>
+    <div>
+      <img src="../img/e.png" alt="">
+    </div>
+    <div class="d-flex align-items-center position-relative show-desktop">
+      <a class="nav-link" href="/index.html">Inicio</a>
+      <a class="nav-link" href="">Somos</a>
+      <button type="button" class="nav-link drop" style="background: none; border:none;" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Productos
+        <ion-icon class="ms-2" name="chevron-down-outline"></ion-icon>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end mt-3">
+        <li>
+          <a href="magnus.html" class="dropdown-item link-item" type="button"><img
+              src="img/icon/MAGNUS PREMIUM.svg" alt=""> Magnus</a>
+        </li>
+        <li>
+          <a href="simac.html" class="dropdown-item link-item" type="button"><img src="img/icon/SIMAC.svg"
+              alt=""> Simac</a>
+        </li>
+      </ul>
+
+      <a class="nav-link" href="">Contacto</a>
+    </div>
+    <div class="show-responsive">
+      <a class="nav-link responsive" href="javascript:void(0)">
+        <ion-icon name="grid-outline"></ion-icon>
+      </a>
+    </div>
+  </header>
+
+  <div class="smooth-scroll">
+
+    <section id="name" class="s-section feature-top">
+      <div class="s-con feature-top s-black">
+        <div class="s-content">
+          <div class="row s-indent-sdt feature-top">
+            <div class="col-5 col-md-2 d-flex justify-content-center align-items-center">
+              <img class="logo" src="../img/icon/SIMAC.svg" alt="">
+            </div>
+            <div class="col-7 col-md-6 offset-md-1">
+              <h1 class="text-uppercase">Simac</h1>
+              <h4 class="text-muted text-uppercase">MRP</h4>
+            </div>
+            <div class="col-md-6 mt-5 offset-md-3">
+              <div class="column-2">
+                <p>
+                  Distribuimos y desarrollamos software desde el 2002, inspirados en el ajedrez es como nacen nuestros sistemas, con
+                  la
+                  finalidad de que en cada jugada fantástica que realices en tu empresa estratega este presente como un tablero; en
+                  donde el tiempo, las decisiones alineadas a la estrategia, el recurso humano calificado y oportuno, la cantidad de
+                  competidores, las variables del entorno, así como perspicacia y determinación para dirigir tu empresa, serán
+                  factores
+                  críticos de éxito, que al controlarlos daremos “Mate de Legal”.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <footer class="s-footer">
+      <div class="s-footer-con-1">
+        <a href="">
+          <img src="../img/ee.png" style="width: 250px;" alt="">
+        </a>
+        <div class="w-80">
+          <small class="f-two text-muted d-block text-uppercase mb-2">Oficina general</small>
+          <small class="f-two">P.º de Los Mirlos 202, San Isidro, 37530 León, Gto.P.º de Los Mirlos 202, San Isidro, 37530
+            León, Gto.</small>
+        </div>
+        <div class="w-80">
+          <small class="text-muted">Facilitamos el control de tus procesos, mediante una metodología secuencial para el
+            análisis estratégico de tu
+            organización</small>
+        </div>
+      </div>
+      <div class="s-footer-con-2">
+        <div class="s-footer-block" id="fBlockOne">
+          <div class="s-f-block-title">
+            <small class="text-uppercase">Productos</small>
+          </div>
+          <div class="footer-links">
+            <ul class="list-unstyled">
+              <li>
+                <a href=""><small class="text-uppercase">Simac mrp</small></a>
+              </li>
+              <li>
+                <a href=""><small class="text-uppercase">Simac mrp</small></a>
+              </li>
+              <li>
+                <a href=""><small class="text-uppercase">Simac mrp</small></a>
+              </li>
+              <li>
+                <a href=""><small class="text-uppercase">Simac mrp</small></a>
+              </li>
+              <li>
+                <a href=""><small class="text-uppercase">Simac mrp</small></a>
+              </li>
+              <li>
+                <a href=""><small class="text-uppercase">Simac mrp</small></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-block-bg"></div>
+        </div>
+        <div class="s-footer-block" id="fBlockTwo">
+          <div class="s-f-block-title">
+            <small class="text-uppercase">General</small>
+          </div>
+          <div class="footer-links">
+            <ul class="list-unstyled">
+              <li>
+                <a href=""><small class="text-uppercase">Inicio</small></a>
+              </li>
+              <li>
+                <a href=""><small class="text-uppercase">Acerca de</small></a>
+              </li>
+              <li>
+                <a href=""><small class="text-uppercase">Contacto</small></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-block-bg"></div>
+        </div>
+        <div class="s-footer-block" id="fBlockThree">
+          <div class="s-f-block-title">
+            <small class="text-uppercase">Social</small>
+          </div>
+          <div class="footer-links">
+            <ul class="list-unstyled">
+              <li>
+                <a href=""><small class="text-uppercase">LinkedIn</small></a>
+              </li>
+              <li>
+                <a href=""><small class="text-uppercase">Facebook</small></a>
+              </li>
+              <li>
+                <a href=""><small class="text-uppercase">Twitter</small></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-block-bg"></div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
 
 
   <!--Bootstrap-->

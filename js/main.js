@@ -56,6 +56,7 @@ ScrollTrigger.matchMedia({
     ScrollTrigger.create({
       trigger: ".card-1",
       start: "=+30px bottom",
+      scroller: ".smooth-scroll",
       end: "bottom top",
       toggleClass: "view",
     });
@@ -63,6 +64,7 @@ ScrollTrigger.matchMedia({
     ScrollTrigger.create({
       trigger: ".card-2",
       start: "=+40px bottom",
+      scroller: ".smooth-scroll",
       end: "bottom top",
       toggleClass: "view",
     });
@@ -70,6 +72,7 @@ ScrollTrigger.matchMedia({
     ScrollTrigger.create({
       trigger: ".card-3",
       start: "=+50px bottom",
+      scroller: ".smooth-scroll",
       end: "bottom top",
       toggleClass: "view",
     });
@@ -92,6 +95,7 @@ ScrollTrigger.matchMedia({
     ScrollTrigger.create({
       trigger: ".s-bg-cta-con",
       start: "=+20px bottom",
+      scroller: ".smooth-scroll",
       end: "bottom top",
       toggleClass: "view",
     });
@@ -127,6 +131,7 @@ ScrollTrigger.matchMedia({
     gsap.timeline({
      scrollTrigger: {
        trigger: '.s-cards',
+       scroller: ".smooth-scroll",
        start: '=-40 center',
        end: 'bottom bottom', //+=300
        toggleActions: "play none reverse reset",

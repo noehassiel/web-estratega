@@ -180,6 +180,7 @@ header{
   transform: translateX(-50%);
   display: flex;
   justify-content: space-between;
+  mix-blend-mode: difference;
 }
 
 @media (max-width:64em) {
@@ -200,16 +201,14 @@ header{
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  color: var(--dark-grey);
   text-decoration: none;
   text-transform: uppercase;
   font-family: var(--secondary-font);
   font-size: .6rem;
-  mix-blend-mode: difference;
 }
 
 .nav-link:hover{
-  color: var(--light-grey);
+  color: var(--green-system);
 }
 
 .link-item{
@@ -224,6 +223,10 @@ header{
 
 .nav-link.responsive{
   font-size: 1.7rem;
+}
+
+.dropdown-item img{
+  mix-blend-mode: color !important;
 }
 
 body{
