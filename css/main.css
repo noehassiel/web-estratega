@@ -235,6 +235,29 @@ body{
   font-family: var(--main-font);
 }
 
+/*SOCIAL MEDIA*/
+.social-media{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+.social-media a{
+  color: white;
+  width: 100%;
+  margin: 5px 0px;
+}
+
+.social-media a ion-icon{
+  font-size: 20px;
+}
+
+/*HERO*/
 .hero{
   height: 100vh;
   background: var(--white);
