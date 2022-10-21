@@ -43,13 +43,17 @@
     @media (max-width:64em) {
       #canvas,
       canvas {
-        mask-size: 220%;
+        mask-size: 300%;
+        mask-position: -60px 20px;;
       }
     }
   </style>
 </head>
 
 <body>
+
+  <div class="word">CARGANDO...</div>
+  <div class="overlay-l"></div>
 
   <header>
     <div>
@@ -599,6 +603,8 @@
 
   <!--Locomotive-->
   <script src="js/locomotive-scroll.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
 
   <!--Main JS-->
   <script src="js/main.js"></script>
