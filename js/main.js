@@ -58,6 +58,7 @@ ScrollTrigger.matchMedia({
       start: "=+30px bottom",
       scroller: ".smooth-scroll",
       end: "bottom top",
+      toggleActions: "play none none none",
       toggleClass: "view",
     });
 

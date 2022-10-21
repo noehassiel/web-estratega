@@ -625,11 +625,11 @@ canvas {
 }
 
 .card-1.view{
-  animation: 1s cardFun;
+  animation: .3s cardFun;
 }
 
 .card-2.view {
-  animation: 1s cardFun;
+  animation: .6s cardFun;
 }
 
 .card-3.view {
