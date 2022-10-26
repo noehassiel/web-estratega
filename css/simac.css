@@ -284,27 +284,15 @@ body .options {
 
 @media (max-width: 70em) {
   body .options {
-    min-width: 520px;
+    min-width: 100%;
     flex-direction: column;
     height: auto;
-  }
-}
-
-@media screen and (max-width: 638px) {
-  body .options {
-    min-width: 440px;
   }
 }
 
 @media screen and (max-width: 558px) {
   body .options {
     min-width: 100%;
-  }
-}
-
-@media screen and (max-width: 478px) {
-  body .options {
-    min-width: 280px;
   }
 }
 
@@ -454,5 +442,9 @@ body .options .option .label .info .sub {
   body .options .option.active {
     max-width: 100%;
     min-height: 80px;
+  }
+
+  body .options .option .label .info .main{
+    font-size: 1rem;
   }
 }
