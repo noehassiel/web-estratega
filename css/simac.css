@@ -403,8 +403,9 @@ body .options .option .label .info>div {
 }
 
 body .options .option .label .info .main {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.2rem;
+  font-family: var(--main-font);
 }
 
 body .options .option .label .info .sub {
