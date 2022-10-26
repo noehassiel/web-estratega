@@ -293,7 +293,6 @@ body .options {
 
 body .options .option {
   position: relative;
-  overflow: hidden;
   min-width: 60px;
   margin: 10px;
   background-size: auto 120%;
@@ -340,9 +339,6 @@ body .options .option.active {
   }*/
 }
 
-body .options .option.active .shadow {
-  box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
-}
 
 body .options .option.active .label {
   bottom: 20px;
@@ -359,10 +355,7 @@ body .options .option:not(.active) {
   border-radius: 30px;
 }
 
-body .options .option:not(.active) .shadow {
-  bottom: -40px;
-  box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
-}
+
 
 body .options .option:not(.active) .label {
   bottom: 10px;
@@ -372,15 +365,6 @@ body .options .option:not(.active) .label {
 body .options .option:not(.active) .label .info>div {
   left: 20px;
   opacity: 0;
-}
-
-body .options .option .shadow {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  height: 120px;
-  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
 }
 
 body .options .option .label {
@@ -441,5 +425,11 @@ body .options .option .label .info .sub {
 
   body .options .option .label .info .main{
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:478px) {
+  body .options .option .label .info .main {
+    font-size: .8rem;
   }
 }
