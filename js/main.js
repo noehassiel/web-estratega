@@ -6,6 +6,15 @@ const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".smooth-scroll"),
   smooth: true
 });
+
+locoScroll.on('scroll', (position) => {
+if ((position.scroll.y) > 20) {
+    document.querySelector('nav').classList.add('scroll-down');
+} else {
+    $("nav").css("top", "inherit");
+    document.querySelector('nav').classList.remove('scroll-down');
+}
+});
 // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
 locoScroll.on("scroll", ScrollTrigger.update);
 

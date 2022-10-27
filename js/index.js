@@ -36,9 +36,9 @@ document.addEventListener("DOMContentLoaded", function(e) {
     let material = new THREE.ShaderMaterial({
         uniforms: {
             u_bg: {type: 'v3', value: rgb(14, 145, 227)},
-            u_bgMain: {type: 'v3', value: rgb(81, 181, 109)},
-            u_color1: {type: 'v3', value: rgb(237, 123, 0)},
-            u_color2: {type: 'v3', value: rgb(214, 4, 11)},
+            u_bgMain: {type: 'v3', value: rgb(186, 215, 96)},
+            u_color1: {type: 'v3', value: rgb(186, 215, 96)},
+            u_color2: {type: 'v3', value: rgb(186, 215, 96)},
             u_time: {type: 'f', value: 0},
             u_randomisePosition: { type: 'v2', value: randomisePosition }
         },
