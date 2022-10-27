@@ -191,7 +191,7 @@ nav{
 
 nav .logo{
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  transition: all .1s ease-in-out;
+  transition: all .2s ease;
 }
 
 nav.scroll-down .logo{
