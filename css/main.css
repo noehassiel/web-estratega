@@ -306,7 +306,7 @@ body{
   position: absolute;
   overflow: hidden;
   bottom: -150px;
-  z-index: 9999;
+  z-index: 9;
   width: 100%;
   height: 550px;
 }
@@ -608,7 +608,7 @@ canvas {
 }
 
 .card-bg{
-  background-image: url('/img/card-bg.png');
+  background-image: url('../img/card-bg.png');
   position: absolute;
   z-index: 0;
   height: 100%;
