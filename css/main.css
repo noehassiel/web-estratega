@@ -275,6 +275,12 @@ body{
   color: var(--dark-grey);
 }
 
+@media (max-width:64em) {
+  .hero{
+    height: 120vh;
+  }
+}
+
 .hero-m-con{
   display: -webkit-box;
   display: -webkit-flex;
