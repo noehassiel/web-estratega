@@ -7,6 +7,23 @@
   --user-button-shadow: rgba(0, 0, 0, 0.1);
 }
 
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+  --dark-grey: #2E2E2E;
+  --light-grey: #6B6B6B;
+  --dark-blue: #1C2D9C;
+  --light-blue: #0E91E3;
+  --purple: #69018F;
+  --green: #179C48;
+  --yellow: #FAD000;
+  --orange: #ED7B00;
+  --red: #D6040B;
+  --green-system: #51B56D;
+  --main-font: 'Alliance';
+  --secondary-font: 'Gt';
+}
+
 body #user-button {
   z-index: 1000;
   bottom: 1rem !important;
@@ -309,28 +326,41 @@ body .options .option .card-bg{
 }
 
 body .options .option:nth-child(1) {
-  --defaultBackground: #ed5565;
+  --defaultBackground: var(--dark-blue);
 }
 
 body .options .option:nth-child(2) {
-  --defaultBackground: #fc6e51;
+  --defaultBackground: var(--light-blue);
 }
 
 body .options .option:nth-child(3) {
-  --defaultBackground: #ffce54;
+  --defaultBackground: var(--green);
 }
 
 body .options .option:nth-child(4) {
-  --defaultBackground: #2ecc71;
+  --defaultBackground: var(--green-system);
 }
 
 body .options .option:nth-child(5) {
-  --defaultBackground: #5d9cec;
+  --defaultBackground: var(--orange);
 }
 
 body .options .option:nth-child(6) {
-  --defaultBackground: #ac92ec;
+  --defaultBackground: var(--purple);
 }
+
+body .options .option:nth-child(7) {
+  --defaultBackground: var(--yellow);
+}
+
+body .options .option:nth-child(8) {
+  --defaultBackground: var(--red);
+}
+
+body .options .option:nth-child(9) {
+  --defaultBackground: var(--light-grey);
+}
+
 
 body .options .option.active {
   flex-grow: 10000;
