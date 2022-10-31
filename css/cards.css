@@ -361,6 +361,10 @@ body .options .option:nth-child(9) {
   --defaultBackground: var(--light-grey);
 }
 
+body .options .option:nth-child(10) {
+  --defaultBackground: var(--black);
+}
+
 
 body .options .option.active {
   flex-grow: 10000;
@@ -469,3 +473,4 @@ body .options .option .label .info .sub {
     font-size: .8rem;
   }
 }
+

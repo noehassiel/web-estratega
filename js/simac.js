@@ -90,9 +90,3 @@ document.addEventListener("DOMContentLoaded", function(e) {
     animate();
 
 });
-
-
-$(".option").click(function(){
-   $(".option").removeClass("active");
-   $(this).addClass("active");
-});

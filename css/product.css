@@ -54,3 +54,18 @@
   }
 }
 
+
+/*Características*/
+.p-cards .card{
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.p-cards .c-cards .col-md-6{
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+.p-cards .c-cards .col-md-6.hide {
+  opacity: 0;
+}

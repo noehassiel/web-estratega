@@ -71,3 +71,34 @@ $("#fBlockThree a").hover(function () {
     $("#fBlockThree .s-f-block-title").css('color', 'var(--white)')
   }
 );
+
+
+/*Product cards*/
+$(".option").click(function(){
+   $(".option").removeClass("active");
+   $(this).addClass("active");
+});
+
+/*Filtros*/
+$("#both").click(function (e) {
+  e.preventDefault();
+  $(".c-cards .main").fadeOut();
+  $(".c-cards .others").fadeOut();
+
+  $(".c-cards .both").fadeIn(400);
+});
+
+$("#main").click(function (e) {
+  e.preventDefault();
+  $(".c-cards .both").fadeOut();
+  $(".c-cards .others").fadeOut();
+  $(".c-cards .main").fadeIn(400);
+});
+
+$("#others").click(function (e) {
+  e.preventDefault();
+  $(".c-cards .both").fadeOut();
+  $(".c-cards .main").fadeOut();
+
+  $(".c-cards .others").fadeIn(400);
+});
