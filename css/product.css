@@ -63,6 +63,10 @@
   filter: none;
 }
 
+.p-cards .card-body {
+  padding-bottom: 10px;
+}
+
 .p-cards .c-cards .col-md-6{
   opacity: 1;
   transition: all .3s ease;
