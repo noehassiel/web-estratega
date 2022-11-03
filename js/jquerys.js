@@ -72,33 +72,38 @@ $("#fBlockThree a").hover(function () {
   }
 );
 
+$(document).ready(function () {
 
-/*Product cards*/
-$(".option").click(function(){
-   $(".option").removeClass("active");
-   $(this).addClass("active");
-});
+  $(".c-cards .main").hide();
+  $(".c-cards .others").hide();
+  /*Product cards*/
+  $(".option").click(function(){
+    $(".option").removeClass("active");
+    $(this).addClass("active");
+  });
 
-/*Filtros*/
-$("#both").click(function (e) {
-  e.preventDefault();
-  $(".c-cards .main").fadeOut();
-  $(".c-cards .others").fadeOut();
+  /*Filtros*/
+  $("#both").click(function (e) {
+    e.preventDefault();
+    $(".c-cards .main").fadeOut();
+    $(".c-cards .others").fadeOut();
 
-  $(".c-cards .both").fadeIn(400);
-});
+    $(".c-cards .both").fadeIn();
+  });
 
-$("#main").click(function (e) {
-  e.preventDefault();
-  $(".c-cards .both").fadeOut();
-  $(".c-cards .others").fadeOut();
-  $(".c-cards .main").fadeIn(400);
-});
+  $("#main").click(function (e) {
+    e.preventDefault();
+    $(".c-cards .both").fadeOut();
+    $(".c-cards .others").fadeOut();
+    $(".c-cards .main").fadeIn();
+  });
 
-$("#others").click(function (e) {
-  e.preventDefault();
-  $(".c-cards .both").fadeOut();
-  $(".c-cards .main").fadeOut();
+  $("#others").click(function (e) {
+    e.preventDefault();
+    $(".c-cards .both").fadeOut();
+    $(".c-cards .main").fadeOut();
 
-  $(".c-cards .others").fadeIn(400);
+    $(".c-cards .others").fadeIn();
+  });
+
 });

@@ -58,7 +58,9 @@
 /*Características*/
 .p-cards .card{
   margin-bottom: 1rem;
-  color: white;
+  color: var(--black);
+  background: white;
+  filter: none;
 }
 
 .p-cards .c-cards .col-md-6{

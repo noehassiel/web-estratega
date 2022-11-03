@@ -15,8 +15,6 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="../css/main.css">
   <meta name="theme-color" content="#fafafa">
 
   <!--Bundle CSS-->
@@ -32,6 +30,20 @@
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/product.css">
   <link rel="stylesheet" href="../css/cards.css">
+
+  <style>
+    .p-cards .col-md-6.both .card{
+      box-shadow: 2px 2px 4px 1px #2e2e2e46;
+    }
+
+    .p-cards .col-md-6.main .card{
+      box-shadow: 2px 2px 4px 1px #179C4846;
+    }
+
+    .p-cards .col-md-6.others .card{
+      box-shadow: 2px 2px 4px 1px #6B6B6B46;
+    }
+  </style>
 
 </head>
 
@@ -277,6 +289,208 @@
       </div>
     </section>
 
+    <section class="s-section p-cards">
+      <div class="s-con s-white s-4">
+        <div class="s-top">
+          <div class="s-title">
+            <h5>Comparativa de Características</h5>
+          </div>
+        </div>
+        <div class="s-content">
+          <div class="row s-indent">
+            <div class="col-md-4 offset-md-1 mb-4">
+              <h5>Título</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit cum nemo tempore facilis nulla commodi quasi
+              </p>
+              <div class="d-inline-flex justify-content-around">
+                <a class="button black-button" id="both">
+                  <div class="button-con">
+                    <div class="button-txt">
+                      Ambos
+                    </div>
+                    <div class="button-arrow-con">
+                      <div class="d-flex justify-content-center align-items-center button-icon">
+                        <ion-icon name="funnel-outline"></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="on-hover"></div>
+                </a>
+                <a class="button black-button ms-3" id="main">
+                  <div class="button-con">
+                    <div class="button-txt">
+                      Simac MRP
+                    </div>
+                    <div class="button-arrow-con">
+                      <div class="d-flex justify-content-center align-items-center button-icon">
+                        <ion-icon name="funnel-outline"></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="on-hover"></div>
+                </a>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="row c-cards">
+
+                <div class="col-md-6 main">
+                  <div class="card card-body">
+                    <p>Prod. -Planeación</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 main">
+                  <div class="card card-body">
+                    <p>Seg. -Programado vs Real</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 main">
+                  <div class="card card-body">
+                    <p>M.P. -Consumo de Materiales y cambio por sustitutos</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 main">
+                  <div class="card card-body">
+                    <p>M.O. Preasignar células</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 main">
+                  <div class="card card-body">
+                    <p>M.O. Generación de los Pagos</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 main">
+                  <div class="card card-body">
+                    <p>M.O. -Envio de Maquilas</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 main">
+                  <div class="card card-body">
+                    <p>Alta. -Tallas y Distribuciones</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 main">
+                  <div class="card card-body">
+                    <p>Alta M.O. -Puestos, personal y Célula de trabajo</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 main">
+                  <div class="card card-body">
+                    <p>Procesos. -Máquinas y operaciones</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 main">
+                  <div class="card card-body">
+                    <p>Procesos. -Instrucciones de trabajo, orientación al personal operativo</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 main">
+                  <div class="card card-body">
+                    <p>Procesos. -Flujo de Operaciones</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 main">
+                  <div class="card card-body">
+                    <p>Reportes. -Por depatamento, por lote, por producto, etc.</p>
+                    <h6>Ilimitados</h6>
+                  </div>
+                </div>
+
+                <div class="col-md-6 main">
+                  <div class="card card-body">
+                    <p>Módulo de diseño y desarrollo de nuevos productos</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 main">
+                  <div class="card card-body">
+                    <p>Consultas . -De todos los procesos mencionados</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 main">
+                  <div class="card card-body">
+                    <p>Analítica KPI´S . -De fabricación</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 both">
+                  <div class="card card-body">
+                    <p>Prod. -Captura de avance y cierre de lotes</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 both">
+                  <div class="card card-body">
+                    <p>Seguimieto. -Avance de Producción por lote</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 both">
+                  <div class="card card-body">
+                    <p>Seg. -Costo Wip</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 both">
+                  <div class="card card-body">
+                    <p>M.P. Generación de etiquetas</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 both">
+                  <div class="card card-body">
+                    <p>M.P. Vale de materiales</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 both">
+                  <div class="card card-body">
+                    <p>M.P. -Productos por cliente</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 both">
+                  <div class="card card-body">
+                    <p>M.P. - Generador de precios al P.T.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 both">
+                  <div class="card card-body">
+                    <p>Alta. -De Fichas Técnicas</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 both">
+                  <div class="card card-body">
+                    <p>Alta. -Líneas de producción</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 both">
+                  <div class="card card-body">
+                    <p>Alta. -Gastos Indirectos de fabricación</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="s-footer">
       <div class="s-footer-con-1">
