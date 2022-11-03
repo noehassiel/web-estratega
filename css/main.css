@@ -311,7 +311,7 @@ body{
 .hero .wave{
   position: absolute;
   overflow: hidden;
-  bottom: -150px;
+  bottom: -290px;
   z-index: 9;
   width: 100%;
   height: 550px;
