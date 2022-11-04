@@ -75,3 +75,11 @@
 .p-cards .c-cards .col-md-6.hide {
   opacity: 0;
 }
+
+.p-cards .option table{
+  display: none;
+}
+
+.p-cards .option.active table {
+  display: block;
+}
