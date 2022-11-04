@@ -318,7 +318,7 @@ body .options .option {
   cursor: pointer;
   transition: 0.3s cubic-bezier(0.05, 0.61, 0.41, 0.95);
   background: #242424;
-  filter: drop-shadow(11px 17px 8px rgba(0, 0, 0, 0.2));
+  box-shadow: 2px 2px 3px 5px rgba(41, 41, 41, 0.592);
 }
 
 body .options .option .card-bg{
