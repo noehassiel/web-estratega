@@ -80,7 +80,7 @@
 }
 
 h1{
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 h2{
@@ -537,7 +537,7 @@ canvas {
 }
 
 .s-full-w h2{
-  font-size: 3.9rem;
+  font-size: 2.9rem;
 }
 
 @media (max-width:64em) {
