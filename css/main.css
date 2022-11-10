@@ -88,7 +88,7 @@ h2{
 }
 
 h3{
-  font-size: 5.1rem;
+  font-size: 4.5rem;
 }
 
 h4{
@@ -695,6 +695,10 @@ canvas {
 
 .p-logo.intel {
   background: #FD7C02;
+}
+
+.p-logo.conta {
+  background: #6B6B6B;
 }
 
 .prodSwiper .swiper-button-next,
