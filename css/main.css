@@ -244,6 +244,63 @@ body{
   background: #1c1c1e;
   color: var(--white);
   font-family: var(--main-font);
+
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--white);
+  background: var(--green);
+}
+
+::selection {
+  color: var(--white);
+  background: var(--green);
+}
+
+/*NAV MOVIL*/
+.nav-movil{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background: var(--black);
+  top: -100%;
+  left: 0;
+  z-index: 99999;
+  transition: all .3s ease-in-out;
+  border-bottom: 4px solid var(--green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-movil.show {
+  top: 0;
+}
+
+.movil-links a{
+  font-family: var(--secondary-font);
+  font-size: 40px;
+  letter-spacing: 0px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+}
+
+.movil-links .collapse a {
+  font-size: 35px;
+}
+
+.movil-links a:hover {
+  letter-spacing: 2px;
+  color: var(--green-system);
+}
+
+#closeB ion-icon{
+  font-size: 40px;
+  color: white;
 }
 
 /*SOCIAL MEDIA*/

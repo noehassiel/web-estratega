@@ -107,3 +107,19 @@ $(document).ready(function () {
   });
 
 });
+
+$('#navMovilB').click(function (e) {
+  e.preventDefault();
+
+  $('.nav-movil').addClass('show');
+
+  $('body').css('overflow', 'hidden');
+});
+
+$('#closeB').click(function (e) {
+  e.preventDefault();
+
+  $('.nav-movil').removeClass('show');
+
+  $('body').css('overflow', 'inherit');
+});
