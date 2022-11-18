@@ -36,11 +36,10 @@
   <style>
     #canvas,
     canvas {
-      mask-image: url('img/wave.svg');
-      mask-mode: alpha;
-      mask-size: 100vw 55vh ;
-      mask-position: 0 0;
-      mask-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      min-height: 120vh;
     }
 
     @media (max-width:64em) {
@@ -50,6 +49,8 @@
         mask-position: -60px 20px;;
       }
     }
+
+
   </style>
 </head>
 
@@ -192,13 +193,17 @@
   <section class="hero position-relative">
     <div class="hero-m-con">
       <div class="hero-title">
-        <h1 class="text-center fw-bold position-relative" style="z-index: 20; mix-blend-mode: difference;">
+        <h1 class="text-center fw-bold position-relative text-white" style="z-index: 20; mix-blend-mode: difference;">
           El arte de dirigir tu empresa hecho software
         </h1>
       </div>
     </div>
+    <div id="wave">
+    </div>
+    <!--
     <div id="wave" class="wave">
     </div>
+    -->
   </section>
 
   <section class="s-section mt-0">
