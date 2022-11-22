@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function(e) {
         uniforms: {
             u_bg: {type: 'v3', value: rgb(14, 145, 227)},
             u_bgMain: {type: 'v3', value: rgb(186, 215, 96)},
-            u_color1: {type: 'v3', value: rgb(186, 215, 96)},
-            u_color2: {type: 'v3', value: rgb(186, 215, 96)},
+            u_color1: {type: 'v3', value: rgb(255, 0, 76)},
+            u_color2: {type: 'v3', value: rgb(186, 215, 76)},
             u_time: {type: 'f', value: 0},
             u_randomisePosition: { type: 'v2', value: randomisePosition }
         },

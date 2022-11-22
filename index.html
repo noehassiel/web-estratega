@@ -216,7 +216,9 @@
           <div class="col-md-4 mb-3">
             <div class="card card-1">
               <div class="card-body">
-                <ion-icon name="analytics-outline"></ion-icon>
+                <div class="icon">
+                  <ion-icon name="analytics-outline"></ion-icon>
+                </div>
                 <h5>Mejora de <br> los procesos</h5>
                 <p>La construcción y diseño de nuestros sistemas están basados en seguir procesos optimizados,
                   los cuales podrás ejecutar correctamente dentro de tu empresa.</p>
@@ -246,7 +248,9 @@
           <div class="col-md-4 mb-3">
             <div class="card card-2">
               <div class="card-body">
-                <ion-icon name="build-outline"></ion-icon>
+                <div class="icon">
+                  <ion-icon name="build-outline"></ion-icon>
+                </div>
                 <h5>Metodología de Implementación</h5>
                 <p>Probada, perfeccionada y avalada tanto que tú mismo puedes ejecutarla.</p>
               </div>
@@ -275,7 +279,9 @@
           <div class="col-md-4 mb-3">
             <div class="card card-3">
               <div class="card-body">
-                <ion-icon name="git-merge-outline"></ion-icon>
+                <div class="icon">
+                  <ion-icon name="git-merge-outline"></ion-icon>
+                </div>
                 <h5>Soporte y mantenimiento</h5>
                 <p>Servicios de asistencia técnica para tus colaboradores; brindamos soporte técnico en
                   tiempo real, para que tu empresa opere continuamente.</p>
@@ -368,7 +374,7 @@
                 </div>
                 <div class="col-md-4">
                   <div class="bg-dark-grey card-img position-relative d-flex justify-content-center align-items-center">
-                    <img src="img/logos/motivare.png" alt="" width="30%">
+                    <img src="img/logos/moti.svg" alt="" width="50%">
                     <small>Colegio Motivare - C.P. Jessica Carrillo (Gerente Contable)</small>
                   </div>
                   <p>“Uno se acostumbra a lo bueno y no te das cuenta de lo que tienes hasta que ves el sistema que usa tu amigo en su chamba
@@ -377,7 +383,7 @@
                 </div>
                 <div class="col-md-4">
                   <div class="bg-dark-grey card-img position-relative d-flex justify-content-center align-items-center">
-                    <img src="img/logos/puerta.png" alt="" width="50%" style="mix-blend-mode: difference;">
+                    <img src="img/logos/puerta.svg" alt="" width="50%">
                     <small>Puerta al Mar</small>
                   </div>
                   <p>“Me encanta la simplicidad con la que puedo ejecutar mis actividades diarias.
@@ -862,12 +868,12 @@
                   vec3 c2 = rgb(u_color2.r, u_color2.g, u_color2.b);
                   vec3 bgMain = rgb(u_bgMain.r, u_bgMain.g, u_bgMain.b);
 
-                  float noise1 = snoise(vUv + u_time * 0.08);
-                  float noise2 = snoise(vUv * 4. + u_time * 0.1);
+                  float noise1 = snoise(vUv + u_time * 0.1);
+                  float noise2 = snoise(vUv * 2. + u_time * 0.1);
 
                   vec3 color = bg;
-                  color = mix(color, c1, noise1 * 0.6);
-                  color = mix(color, c2, noise2 * .4);
+                  color = mix(color, c1, noise1 * .9);
+                  color = mix(color, c2, noise2 * .9);
 
                   color = mix(color, mix(c1, c2, vUv.x), vDistortion);
 
@@ -875,7 +881,7 @@
 
                   color = mix(color, bgMain, 1. -border);
 
-                  gl_FragColor = vec4(color, 1.0);
+                  gl_FragColor = vec4(color, 4.0);
               }
           </script>
 

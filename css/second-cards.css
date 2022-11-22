@@ -1,6 +1,4 @@
 body {
-  --background-color: #18181B;
-  --text-color: #A1A1AA;
   --card-background-color: rgba(255, 255, 255, .015);
   --card-border-color: rgba(255, 255, 255, 0.1);
   --card-box-shadow-1: rgba(0, 0, 0, 0.05);
@@ -30,52 +28,8 @@ body {
   --blur-opacity: .01;
 }
 
-body.light {
-  --background-color: #FAFAFA;
-  --text-color: #52525B;
-  --card-background-color: transparent;
-  --card-border-color: rgba(24, 24, 27, 0.08);
-  --card-box-shadow-1: rgba(24, 24, 27, 0.02);
-  --card-box-shadow-1-y: 3px;
-  --card-box-shadow-1-blur: 6px;
-  --card-box-shadow-2: rgba(24, 24, 27, 0.04);
-  --card-box-shadow-2-y: 2px;
-  --card-box-shadow-2-blur: 7px;
-  --card-label-color: #18181B;
-  --card-icon-color: #18181B;
-  --card-icon-background-color: rgba(24, 24, 27, 0.04);
-  --card-icon-border-color: rgba(24, 24, 27, 0.1);
-  --card-shine-opacity: .3;
-  --card-shine-gradient: conic-gradient(from 225deg at 50% 50%, rgba(16, 185, 129, 0) 0deg, #10B981 25deg, #EDFAF6 285deg, #FFFFFF 345deg, rgba(16, 185, 129, 0) 360deg);
-  --card-line-color: #E9E9E7;
-  --card-tile-color: rgba(16, 185, 129, 0.08);
-  --card-hover-border-color: rgba(24, 24, 27, 0.15);
-  --card-hover-box-shadow-1: rgba(24, 24, 27, 0.05);
-  --card-hover-box-shadow-1-y: 3px;
-  --card-hover-box-shadow-1-blur: 6px;
-  --card-hover-box-shadow-2: rgba(24, 24, 27, 0.1);
-  --card-hover-box-shadow-2-y: 8px;
-  --card-hover-box-shadow-2-blur: 15px;
-  --card-hover-icon-color: #18181B;
-  --card-hover-icon-background-color: rgba(24, 24, 27, 0.04);
-  --card-hover-icon-border-color: rgba(24, 24, 27, 0.34);
-  --blur-opacity: .1;
-}
-
-body.toggle .grid * {
-  transition-duration: 0s !important;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 240px);
-  grid-gap: 32px;
-  position: relative;
-  z-index: 1;
-}
-
 .card {
-  background-color: var(--background-color);
+  background-color: #242424;
   box-shadow: 0px var(--card-box-shadow-1-y) var(--card-box-shadow-1-blur) var(--card-box-shadow-1), 0px var(--card-box-shadow-2-y) var(--card-box-shadow-2-blur) var(--card-box-shadow-2), 0 0 0 1px var(--card-border-color);
   padding: 56px 16px 16px 16px;
   border-radius: 15px;
@@ -139,7 +93,7 @@ body.toggle .grid * {
   margin: 0;
   font-size: 14px;
   line-height: 1.7;
-  color: var(--text-color);
+  color: var(--white);
 }
 
 .card .shine {
