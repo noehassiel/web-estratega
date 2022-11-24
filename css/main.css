@@ -638,7 +638,7 @@ canvas {
   }
 
   .s-cta-quote-title {
-    margin-top: 0;
+    margin-top: 1rem;
   }
 }
 
@@ -702,6 +702,10 @@ canvas {
   transition: box-shadow 0.25s;
 }
 
+.card-w{
+  background: var(--white);
+}
+
 .card-body {
   position: relative;
   z-index: 1;
@@ -753,6 +757,10 @@ canvas {
   transform: translateZ(0);
   color: var(--card-icon-color);
   transition: color 0.25s;
+}
+
+.card-w h4, .card-w p, .card-w .text-white {
+  color: #242424 !important;
 }
 
 .card h4 {
@@ -959,6 +967,11 @@ canvas {
   position: absolute;
   background-color: var(--card-line-color);
   transition: transform 0.35s;
+}
+
+.card-w .background .line:before,
+.card-w .background .line:after {
+  background-color: #E9E9E7;
 }
 
 .card .background .line:before {
