@@ -29,39 +29,6 @@
 - [JQuery](https://jquery.com)
 
 
-
-## Comenzando
-
-### Pre-requisitos
-
-- PHP: `^7.4\|^8.0`
-
-### Instalación
-
-Para el uso correcto de este template es necesario actualizar los paquetes dentro del mismo, por lo tanto corremos el siguiente comando:
-
-```
-composer update
-```
-
-### Eventos de Facebook
-
-La plataforma esta preparada para recibir eventos de Facebook integrando el código de pixel desde `Integraciones del Sistema` en la sección de `Preferencias Generales` de la configuración, asi como la conexión con la API de Conversiones de Facebook.
-
-Los eventos que el sistema monitorea son:
-
-- PageView
-- ViewContent
-- Search
-- Purchase
-- InitiateCheckout
-- Contact
-- AddToWishlist
-- AddToCart
-- AddPaymentInfo
-
-Para activar el evento <strong>Contact</strong> agrega la clase `contact_action` a los links que ejecuten una acción de contacto. (mailto, tel, chat, etc.)
-
 ## Personalizar
 
 Para hacer cambios en los estilos puedes modificar libremente el archivo `index.php` dentro del proyecto para modificar o eliminar los archivos originales de la plantilla. Para sobreescribir los preexistentes recomendamos hacer todo dentro de la carpeta `css` en el archivo `main.css`
@@ -81,6 +48,7 @@ Estructura de carpeta css:
   - main.css (Estilos particulares globales)
 
 
+-->
 
 ## Licencia
 
@@ -103,7 +71,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
--->
+
 <!-- CONTACT -->
 
 ## Contacto
@@ -122,9 +90,5 @@ Noé Hassiel Monterrosas Bandala - [@noehassiel](https://instagram.com/noehassie
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [forks-shield]: https://img.shields.io/github/forks/nowyouwerkn/wecommerce
-[forks-url]: https://github.com/nowyouwerkn/wecommerce/network/members
 [stars-shield]: https://img.shields.io/github/stars/nowyouwerkn/wecommerce
-[stars-url]: https://github.com/nowyouwerkn/wecommerce/stargazers
-[issues-shield]: hhttps://img.shields.io/github/issues/nowyouwerkn/wecommerce
-[issues-url]: https://github.com/nowyouwerkn/wecommerce/issues
 [product-screenshot]: images/screenshot.png

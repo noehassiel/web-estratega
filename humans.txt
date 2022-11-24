@@ -10,5 +10,5 @@
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5, Adobe XD, Laravel
+    CSS3, HTML5, Figma, Green Stock, JS
     Apache Server Configs, jQuery, Modernizr, Normalize.css
