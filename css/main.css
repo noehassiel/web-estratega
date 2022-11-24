@@ -307,12 +307,12 @@ body {
 }
 
 .movil-links li{
-  margin-bottom: 2rem;
+  margin-bottom: 1.3rem;
 }
 
 .movil-links a {
   font-family: var(--secondary-font);
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 0px;
   text-decoration: none;
   color: white;
@@ -321,7 +321,11 @@ body {
 }
 
 .movil-links .collapse a {
-  font-size: 35px;
+  font-size: 20px;
+}
+
+.movil-links .collapse li{
+  margin-bottom: .8rem;
 }
 
 .movil-links a:hover {
