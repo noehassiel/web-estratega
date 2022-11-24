@@ -1172,6 +1172,10 @@ canvas {
   background: #6b6b6b;
 }
 
+.p-logo.m-light {
+  background: #038FE3;
+}
+
 .prodSwiper .swiper-button-next,
 .prodSwiper .swiper-button-prev {
   border: 1px solid var(--black);
