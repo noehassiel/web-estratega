@@ -89,18 +89,3 @@ document.addEventListener("DOMContentLoaded", function(e) {
     animate();
 
 });
-
-var animation = bodymovin.loadAnimation({
-  // animationData: { /* ... */ },
-  container: document.getElementById('icon-container'), // required
-  path: 'data.json', // required
-  renderer: 'svg', // required
-  loop: true, // optional
-  autoplay: true, // optional
-  name: "Logo", // optional
-});
-
-$(window).bind("load", function() {
- // code here
- $('.overlay-l').delay(2000).fadeOut();
-});
