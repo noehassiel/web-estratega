@@ -1500,6 +1500,8 @@ footer small {
   }
 }
 
+
+
 .word {
   bottom: 0;
   color: #fff;
@@ -1539,4 +1541,7 @@ footer small {
   right: 0;
   top: 0;
   z-index: 998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
