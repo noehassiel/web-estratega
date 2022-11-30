@@ -209,5 +209,5 @@ var animation = bodymovin.loadAnimation({
 
 $(window).bind("load", function() {
  // code here
- $('.overlay-l').delay(2000).fadeOut();
+ $('.overlay-l').delay(500).fadeOut();
 });
