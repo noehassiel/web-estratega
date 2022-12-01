@@ -202,6 +202,10 @@ small {
   .show-responsive {
     display: initial !important;
   }
+
+  .l-r{
+    width: 150px !important;
+  }
 }
 
 nav {
