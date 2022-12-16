@@ -244,6 +244,8 @@ nav.scroll-down .logo {
 nav.scroll-down{
   background: rgba(205, 205, 205, 0.506);
   color: var(--black);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 nav.scroll-down svg path{
