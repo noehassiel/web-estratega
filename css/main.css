@@ -157,6 +157,10 @@ small {
   h1 {
     font-size: 4rem;
   }
+
+  h5{
+    font-size:1.4rem;
+  }
 }
 
 @media (max-width: 767px) {
