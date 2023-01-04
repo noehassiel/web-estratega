@@ -157,9 +157,15 @@ small {
   h1 {
     font-size: 4rem;
   }
+}
 
-  h5{
-    font-size:1.4rem;
+@media (max-width:1100px) {
+  h5 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 4rem;
   }
 }
 
@@ -207,7 +213,7 @@ small {
     display: initial !important;
   }
 
-  .l-r{
+  .l-r {
     width: 150px !important;
   }
 }
@@ -245,14 +251,14 @@ nav.scroll-down .logo {
   transition: all 0.3s ease-in-out;
 }
 
-nav.scroll-down{
+nav.scroll-down {
   background: rgba(205, 205, 205, 0.506);
   color: var(--black);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
-nav.scroll-down svg path{
+nav.scroll-down svg path {
   fill: black;
 }
 
@@ -334,7 +340,7 @@ body {
   top: 0;
 }
 
-.movil-links li{
+.movil-links li {
   margin-bottom: 1.3rem;
 }
 
@@ -352,7 +358,7 @@ body {
   font-size: 20px;
 }
 
-.movil-links .collapse li{
+.movil-links .collapse li {
   margin-bottom: .8rem;
 }
 
@@ -515,6 +521,7 @@ canvas {
   0% {
     clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
   }
+
   100% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
@@ -664,6 +671,10 @@ canvas {
   font-size: 2.9rem;
 }
 
+.client-logo {
+  width: 50%;
+}
+
 @media (max-width: 64em) {
   .cta-indent {
     margin-left: 5%;
@@ -672,11 +683,21 @@ canvas {
   .s-cta-quote-title {
     margin-top: 1rem;
   }
+
+  .client-logo {
+    width: 80%;
+  }
+}
+
+@media (max-width:1100px) {
+  .s-full-w h2 {
+    font-size: 2.4rem;
+  }
 }
 
 @media (max-width: 64em) {
   .s-full-w h2 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 }
 
@@ -734,7 +755,7 @@ canvas {
   transition: box-shadow 0.25s;
 }
 
-.card-w{
+.card-w {
   background: var(--white);
 }
 
@@ -791,7 +812,9 @@ canvas {
   transition: color 0.25s;
 }
 
-.card-w h4, .card-w p, .card-w .text-white {
+.card-w h4,
+.card-w p,
+.card-w .text-white {
   color: #242424 !important;
 }
 
@@ -1152,6 +1175,7 @@ canvas {
   0% {
     clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
   }
+
   100% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
@@ -1177,7 +1201,13 @@ canvas {
 }
 
 .p-logo img {
-  width: 50%;
+  width: 30%;
+}
+
+@media (max-width:64em) {
+  .p-logo img {
+    width: 50%;
+  }
 }
 
 .product-slide .p-logo h5 {
@@ -1217,10 +1247,12 @@ canvas {
   font-size: 20px;
   color: var(--black);
 }
+
 /*FOOTER*/
 footer small {
   font-size: 0.75rem;
 }
+
 .s-footer {
   display: flex;
   width: 100vw;
@@ -1320,13 +1352,11 @@ footer small {
   top: 0;
   right: 0;
   bottom: 0;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#161618),
-    to(transparent)
-  );
+  background-image: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      from(#161618),
+      to(transparent));
   background-image: linear-gradient(180deg, #161618, transparent);
   height: 0;
 }
