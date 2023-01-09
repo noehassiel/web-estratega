@@ -290,7 +290,7 @@ body.dark {
 }
 
 body .options {
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: stretch;
   min-width: 600px;
@@ -301,6 +301,7 @@ body .options {
 
 @media (max-width: 70em) {
   body .options {
+    display: flex;
     min-width: 100%;
     flex-direction: column;
     height: auto;
@@ -458,6 +459,11 @@ body .options .option .label .info .sub {
 
 /*Responsive cards*/
 @media (max-width:70em) {
+
+  .options-pro {
+    display: none;
+  }
+
   body .options .option {
     min-height: 70px;
   }

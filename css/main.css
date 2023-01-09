@@ -1514,7 +1514,11 @@ footer small {
   }
 
   .s-indent {
-    padding-top: 30%;
+    padding-top: 15%;
+  }
+
+  .products-s .s-indent {
+    padding-top: 15%;
   }
 
   .column-2 {

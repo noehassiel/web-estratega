@@ -8,12 +8,12 @@ const locoScroll = new LocomotiveScroll({
 });
 
 locoScroll.on('scroll', (position) => {
-if ((position.scroll.y) > 20) {
+  if ((position.scroll.y) > 20) {
     document.querySelector('nav').classList.add('scroll-down');
-} else {
+  } else {
     $("nav").css("top", "inherit");
     document.querySelector('nav').classList.remove('scroll-down');
-}
+  }
 });
 // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
 locoScroll.on("scroll", ScrollTrigger.update);
@@ -24,7 +24,7 @@ ScrollTrigger.scrollerProxy(".smooth-scroll", {
     return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
   }, // we don't have to define a scrollLeft because we're only scrolling vertically.
   getBoundingClientRect() {
-    return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+    return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
   },
   // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
   pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"
@@ -33,7 +33,7 @@ ScrollTrigger.scrollerProxy(".smooth-scroll", {
 
 ScrollTrigger.matchMedia({
 
-  "(min-width: 960px)": function() {
+  "(min-width: 960px)": function () {
 
     gsap.from(".s-1", {
       scrollTrigger: {
@@ -139,24 +139,24 @@ ScrollTrigger.matchMedia({
 
 
     gsap.timeline({
-     scrollTrigger: {
-       trigger: '.s-cards',
-       scroller: ".smooth-scroll",
-       start: '=-40 center',
-       end: 'bottom bottom', //+=300
-       toggleActions: "play none reverse reset",
-       defaults:{
-         ease: 'power1.inOut',
-         duration:1,
-         transformOrigin:'0 0'
-       },
-     },
-   })
+      scrollTrigger: {
+        trigger: '.s-cards',
+        scroller: ".smooth-scroll",
+        start: '=-40 center',
+        end: 'bottom bottom', //+=300
+        toggleActions: "play none reverse reset",
+        defaults: {
+          ease: 'power1.inOut',
+          duration: 1,
+          transformOrigin: '0 0'
+        },
+      },
+    })
 
-   /*numero 1*/
-   .from('.card-img ', { y: 20, x: 20, opacity: 0})
-   .to('.card-img ', { immediateRender: false, duration:1.5 })
-   .to('.card-img ', { y: 0})
+      /*numero 1*/
+      .from('.card-img ', { y: 20, x: 20, opacity: 0 })
+      .to('.card-img ', { immediateRender: false, duration: 1.5 })
+      .to('.card-img ', { y: 0 })
 
   }
 
@@ -207,7 +207,7 @@ var animation = bodymovin.loadAnimation({
   name: "Logo", // optional
 });
 
-$(window).bind("load", function() {
- // code here
- $('.overlay-l').delay(500).fadeOut();
+$(window).bind("load", function () {
+  // code here
+  $('.overlay-l').delay(500).fadeOut();
 });
