@@ -445,6 +445,11 @@ body .options .option .label .info {
   white-space: pre;
 }
 
+body .options .option.active .label {
+
+  rotate: 0deg;
+}
+
 body .options .option .label .info>div {
   position: relative;
   transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
