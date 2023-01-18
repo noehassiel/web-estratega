@@ -1,13 +1,11 @@
 .s-section.feature-top {
   height: 100% !important;
   margin-top: 0;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(71%, #161618),
-    to(rgba(28, 28, 30, 0))
-  );
+  background-image: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      color-stop(71%, #161618),
+      to(rgba(28, 28, 30, 0)));
   background-image: linear-gradient(180deg, #161618 71%, rgba(28, 28, 30, 0));
 }
 
@@ -92,4 +90,39 @@
   h1 {
     font-size: 2rem;
   }
+}
+
+
+/*Video pills*/
+.video-pill {
+  position: absolute;
+  height: 100vh;
+  width: 50%;
+  right: -50%;
+  top: 0;
+  background: var(--black);
+  z-index: 103;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-pill.show {
+  right: 0;
+}
+
+.overlay-img {
+  position: absolute;
+  width: 100vw;
+  background: var(--black);
+  height: 100vh;
+  opacity: 0;
+  z-index: 102;
+  top: 0;
+  right: -100%;
+}
+
+.overlay-img.show {
+  opacity: .8;
+  right: 0;
 }
