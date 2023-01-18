@@ -49,34 +49,15 @@
     }
 
     .scroll {
-      height: 100vh;
+      height: auto;
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      position: relative;
+      position: absolute;
       z-index: 1;
-      font-family: Roboto, sans-serif;
-      letter-spacing: 0.2em;
-      margin-bottom: -100vh;
-      font-size: 11px;
-    }
-
-    .scroll span {
-      display: block;
-    }
-
-    .scroll svg {
-      margin-top: 10px;
-      width: 18px;
-      height: 18px;
-      -webkit-animation: scroll 0.95s ease-in-out alternate infinite;
-      animation: scroll 0.95s ease-in-out alternate infinite;
-      fill: none;
-      stroke: #000000;
-      stroke-linecap: round;
-      stroke-miterlimit: 10;
-      stroke-width: 1;
+      padding-top: 20vh;
     }
 
     .circle {
@@ -86,26 +67,6 @@
       opacity: 0;
       margin: -19px auto;
       transition: transform 1s cubic-bezier(0.14, 0.15, 0.13, 0.99);
-    }
-
-    @-webkit-keyframes scroll {
-      0% {
-        transform: translateY(0);
-      }
-
-      100% {
-        transform: translateY(10px);
-      }
-    }
-
-    @keyframes scroll {
-      0% {
-        transform: translateY(0);
-      }
-
-      100% {
-        transform: translateY(10px);
-      }
     }
   </style>
 </head>
@@ -283,17 +244,16 @@
   </div>
 
   <div class="scroll">
-    <span>SCROLL</span>
-
-
-    <svg viewBox="0 0 24 24">
-      <line class="st1" x1="12" y1="1" x2="12" y2="22.5" />
-      <line class="st1" x1="12.1" y1="22.4" x2="18.9" y2="15.6" />
-      <line class="st1" x1="11.9" y1="22.4" x2="5.1" y2="15.6" />
-    </svg>
-
+    <section class="position-relative">
+      <div class="hero-m-con">
+        <div class="hero-title">
+          <h1 class="text-center fw-bold position-relative text-white" style="z-index: 20; font-size: 4.4rem;">
+            Nuestra Trayectoria
+          </h1>
+        </div>
+      </div>
+    </section>
   </div>
-
   <!--Bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
