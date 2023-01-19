@@ -40,11 +40,112 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <!--Main CSS-->
+  <style>
+    .header {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .inner-header {
+      height: 90vh;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .flex {
+      /*Flexbox for containers*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .waves {
+      position: relative;
+      width: 100%;
+      height: 15vh;
+      margin-bottom: 0px;
+      /*Fix for safari gap*/
+      min-height: 100px;
+      max-height: 150px;
+    }
+
+    .content {
+      position: relative;
+      height: 20vh;
+      text-align: center;
+      background-color: rgb(255, 255, 255);
+    }
+
+    /* Animation */
+
+    .parallax>use {
+      animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+    }
+
+    .parallax>use:nth-child(1) {
+      animation-delay: -2s;
+      animation-duration: 7s;
+    }
+
+    .parallax>use:nth-child(2) {
+      animation-delay: -3s;
+      animation-duration: 10s;
+    }
+
+    .parallax>use:nth-child(3) {
+      animation-delay: -4s;
+      animation-duration: 13s;
+    }
+
+    .parallax>use:nth-child(4) {
+      animation-delay: -5s;
+      animation-duration: 20s;
+    }
+
+    @keyframes move-forever {
+      0% {
+        transform: translate3d(-90px, 0, 0);
+      }
+
+      100% {
+        transform: translate3d(85px, 0, 0);
+      }
+    }
+
+    /*Shrinking for mobile*/
+    @media (max-width: 768px) {
+      .waves {
+        height: 40px;
+        min-height: 40px;
+      }
+
+      .content {
+        height: 30vh;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+
+
   <link rel="stylesheet" href="css/main.css">
 
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
   <style>
+    nav.scroll-down .logo {
+      transition: all 0.2s ease;
+    }
+
     body {
       overflow-y: scroll;
       overflow-x: hidden;
@@ -60,6 +161,10 @@
       position: absolute;
       z-index: 1;
       padding-top: 20vh;
+    }
+
+    .o-section {
+      margin-top: 90px;
     }
 
     .circle {
@@ -81,6 +186,94 @@
 
     .c-animation {
       max-width: 660px;
+    }
+
+    :root {
+      --bg-color: hsl(59, 50%, 53%);
+      --bg-color-highlight: rgb(63, 170, 94);
+      --color-text-highlight: rgb(241, 241, 241);
+      --padding: 8vmin;
+      --duration: .5s;
+      --ease: cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .text-highlight {
+      background-repeat: no-repeat;
+      background-size: 0% 100%;
+      -webkit-transition: color calc(var(--duration) / 4) var(--ease), background-color calc(var(--duration) / 4) var(--ease), background-size var(--duration) var(--ease);
+      transition: color calc(var(--duration) / 4) var(--ease), background-color calc(var(--duration) / 4) var(--ease), background-size var(--duration) var(--ease);
+    }
+
+    .active {
+      padding: 0 5px;
+      color: var(--color-text-highlight);
+      background-size: 100% 100%;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-color-highlight)), to(var(--bg-color-highlight)));
+      background-image: linear-gradient(var(--bg-color-highlight), var(--bg-color-highlight));
+    }
+
+    @keyframes move {
+      100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+      }
+    }
+
+    .first-info {
+      padding-top: 30px;
+      padding-right: 90px;
+    }
+
+    .first-info .cd-timeline-block:nth-child(2) {
+      margin-top: 130px;
+    }
+
+    .first-info .cd-timeline-block:nth-child(3) {
+      margin-top: 130px;
+    }
+
+    .first-info .cd-timeline-block:nth-child(4) {
+      margin-top: 130px;
+    }
+
+    .one .cd-timeline-content {
+      position: relative;
+      opacity: 0;
+      right: -40px;
+      transition: all .5s ease-in-out;
+    }
+
+    .one .cd-timeline-content.show {
+      opacity: 1;
+      right: 0;
+    }
+
+    .second-info {
+      padding-top: 150px;
+      padding-left: 90px;
+    }
+
+    .second-info .cd-timeline-block:nth-child(2) {
+      margin-top: 150px;
+    }
+
+    .second-info .cd-timeline-block:nth-child(3) {
+      margin-top: 150px;
+    }
+
+    .second-info .cd-timeline-block:nth-child(4) {
+      margin-top: 150px;
+    }
+
+    .two .cd-timeline-content {
+      position: relative;
+      opacity: 0;
+      left: -40px;
+      transition: all .5s ease-in-out;
+    }
+
+    .two .cd-timeline-content.show {
+      opacity: 1;
+      left: 0px;
     }
   </style>
 </head>
@@ -256,51 +449,128 @@
   <!-- ANIMATION CREDIT:  -->
   <!-- https://lottiefiles.com/alimograph  -->
 
-  <section class="hero position-relative bg-dark" style="background: #1C1C1E !important;">
-    <div class="hero-m-con">
-      <div class="hero-title d-flex justify-content-center flex-column align-items-center">
-        <h1 class="text-center fw-bold position-relative text-white mb-5 title-1"
-          style="z-index: 20; mix-blend-mode: difference; font-size: 4.4rem;">
-          Nuestra Trayectoria
-        </h1>
-        <lottie-player class="title-2" src="https://lottie.host/97859620-d4fe-4d15-ab29-dfcd8b0f2508/rp5SxjiVWy.json"
-          background="transparent" speed="1" style="width: 70px; height: 70px; opacity: .2;" loop
-          autoplay></lottie-player>
-      </div>
+  <div class="header">
+
+    <!--Content before waves-->
+    <div class="inner-header flex">
+      <!--Just the logo.. Don't mind this-->
+      <h1 class="text-center fw-bold position-relative text-white mb-5 title-1"
+        style="z-index: 20; mix-blend-mode: difference; font-size: 4.4rem;">
+        Nuestra Trayectoria
+      </h1>
+      <lottie-player class="title-2" src="https://lottie.host/97859620-d4fe-4d15-ab29-dfcd8b0f2508/rp5SxjiVWy.json"
+        background="transparent" speed="1" style="width: 70px; height: 70px;" loop autoplay></lottie-player>
     </div>
-  </section>
 
-  <section>
+    <!--Waves Container-->
+    <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(74,71,64,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(74,74,74,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(74,74,74,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(74,74,74,0.3)" />
+        </g>
+      </svg>
+    </div>
+    <!--Waves end-->
 
-  </section>
+  </div>
+
+  <style>
+    .scroller {
+      width: 100%;
+      height: 200vh;
+      position: relative;
+      overflow: hidden !important;
+      z-index: 6;
+      margin-bottom: 50px;
+    }
+
+    .red-box {
+      width: 100%;
+      height: 100vh;
+      background-image: url("img/bgimg.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      border-radius: 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .red-box.active-box {
+      border-radius: 20px;
+    }
+
+    .overlay-box {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.553);
+    }
+  </style>
+
+  <div class="scroller show-desktop">
+    <div class="red-box" id="highlight-style">
+      <div style="z-index: 2;" class="position-relative">
+        <h3><span class="text-highlight">20 años en la industria</span> desarrollando y <br> comercializando software
+          nos han ayudado a
+          consolidarnos.</h3>
+      </div>
+      <div class="overlay-box"></div>
+    </div>
+  </div>
 
   <section class="o-section">
     <div class="container">
       <div class="row">
 
-        <div class="col-md-4">
-
-          <div class="cd-timeline-block">
+        <div class="col-md-4 first-info">
+          <div class="cd-timeline-block one" id="highlight-style">
             <div class="cd-timeline-content">
-              <h2>Title of section 1</h2>
+              <h6><span class="text-highlight"> Nacimos el 2002</span> <br><br>
+
+                Inspirado en el ajedrez, más el apoyo de su esposa y la confianza de los clientes es como Enrique
+                Mendoza crea Estratega
+                Sistemas</h6>
             </div> <!-- cd-timeline-content -->
           </div> <!-- cd-timeline-block -->
 
-          <div class="cd-timeline-block">
+          <div class="cd-timeline-block one" id="highlight-style">
             <div class="cd-timeline-content">
-              <h2>Title of section 2</h2>
+              <h6><span class="text-highlight"> Lanzamos SIMAC 2004</span> <br><br>
+
+                Rompiendo paradigmas en la industria así es como introducimos SIMAC al mercado.</h6>
             </div> <!-- cd-timeline-content -->
           </div> <!-- cd-timeline-block -->
 
-          <div class="cd-timeline-block">
+          <div class="cd-timeline-block one" id="highlight-style">
             <div class="cd-timeline-content">
-              <h2>Title of section 3</h2>
+              <h6><span class="text-highlight"> Obtuvimos Distintivo M en 2005 y 2022</span> <br><br>
+
+                Elevar la calidad en el servicio y la productividad de nuestros colaboradores con un trato humano es
+                parte de la esencia
+                de Estratega.
+              </h6>
             </div> <!-- cd-timeline-content -->
           </div> <!-- cd-timeline-block -->
 
-          <div class="cd-timeline-block">
+          <div class="cd-timeline-block one" id="highlight-style">
             <div class="cd-timeline-content">
-              <h2>Title of section 4</h2>
+              <h6><span class="text-highlight"> Más premios y apoyos 2007</span> <br><br>
+
+                Ser profesionales ha tenido su recompensa obtuvimos: TechBA y en 2013 premio Enlace.</h6>
             </div> <!-- cd-timeline-content -->
           </div> <!-- cd-timeline-block -->
         </div>
@@ -313,29 +583,37 @@
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 second-info">
 
-          <div class="cd-timeline-block">
+          <div class="cd-timeline-block two" id="highlight-style">
             <div class="cd-timeline-content">
-              <h2>Title of section 1</h2>
+              <h6><span class="text-highlight"> Desarrollamos Sistemas</span> <br><br>
+
+                Utilizando tecnologías y lenguajes de alto nivel para desarrollar soluciones innovadoras.</h6>
             </div> <!-- cd-timeline-content -->
           </div> <!-- cd-timeline-block -->
 
-          <div class="cd-timeline-block">
+          <div class="cd-timeline-block two" id="highlight-style">
             <div class="cd-timeline-content">
-              <h2>Title of section 2</h2>
+              <h6><span class="text-highlight"> Primer premio 2005</span> <br><br>
+
+                Nuestra constancia y empeño fue reconocido al ganar PROSOFT 2.0</h6>
             </div> <!-- cd-timeline-content -->
           </div> <!-- cd-timeline-block -->
 
-          <div class="cd-timeline-block">
+          <div class="cd-timeline-block two" id="highlight-style">
             <div class="cd-timeline-content">
-              <h2>Title of section 3</h2>
+              <h6><span class="text-highlight">Nace MAGNUS ERP 2011</span> <br><br>
+
+                Y con él varios desarrollos importantes como; POS, EXPRESS, MAGNUS GO E INTELLIGENCE.</h6>
             </div> <!-- cd-timeline-content -->
           </div> <!-- cd-timeline-block -->
 
-          <div class="cd-timeline-block">
+          <div class="cd-timeline-block two" id="highlight-style">
             <div class="cd-timeline-content">
-              <h2>Title of section 4</h2>
+              <h6><span class="text-highlight"> Reestructuramos Estratega 2022</span> <br><br>
+
+                Para seguir acompañando a más empresarios en la difícil y ardua tarea de dirigir su empresa.</h6>
             </div> <!-- cd-timeline-content -->
           </div> <!-- cd-timeline-block -->
 
@@ -480,6 +758,19 @@
   <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 
   <script>
+
+    $(window).scroll(function () {
+      // find the id with class 'active' and remove it
+      document.querySelector('nav').classList.remove('scroll-down');
+
+      // get the amount the window has scrolled
+      var scroll = $(window).scrollTop();
+      // add the 'active' class to the correct id based on the scroll amount
+      if (scroll > 20) {
+        $("nav").css("top", "inherit");
+        document.querySelector('nav').classList.add('scroll-down');
+      }
+    });
     gsap.registerPlugin(ScrollTrigger);
 
     class ScrubControlledAnimation {
@@ -528,7 +819,7 @@
         const scrubAnimationTimeline = gsap.timeline({}).to(
           { frame: 0 },
           {
-            duration: 1,
+            duration: 20,
             frame: animation.totalFrames - 30,
             onUpdate: function () {
               animation.goToAndStop(Math.round(this.targets()[0].frame), true);
@@ -542,8 +833,8 @@
           trigger: ".pro",
           animation: scrubAnimationTimeline,
           // markers: true,
-          start: "top+=100 top",
-          end: "bottom bottom",
+          start: "top+=200 center",
+          end: "bottom+=100 bottom",
           scrub: 0.1,
           pin: true,
           markers: true,
@@ -563,6 +854,49 @@
     let tl = gsap.timeline();
     tl.to('.title-1 .letter', { opacity: 1, y: '0', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', stagger: '.1' })
     tl.to('.title-2 .letter', { opacity: 1, y: '0', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', stagger: '.03' }, "-=.7")
+  </script>
+
+  <script>
+    ScrollTrigger.saveStyles(".red-box");
+
+    var box = gsap.to('.red-box', {
+      scale: 0.75,
+      // delay: 1,
+
+      scrollTrigger: {
+        pin: true,
+        scrub: true,
+        trigger: ".red-box",
+        start: "center center",
+        end: "bottom 0",
+        onEnter: () => highlight.classList.add("active-box")
+      }
+    });
+
+    const highlight = document.getElementById("highlight-style");
+
+    gsap.utils.toArray(".text-highlight").forEach((highlight) => {
+      ScrollTrigger.create({
+        trigger: highlight,
+        start: "+20px center",
+        onEnter: () => highlight.classList.add("active"),
+        onLeaveBack: () => highlight.classList.remove("active")
+      });
+    });
+
+    const firsts = document.getElementsByClassName("one");
+
+    gsap.utils.toArray(".cd-timeline-content").forEach((highlight) => {
+      ScrollTrigger.create({
+        trigger: highlight,
+        start: "-30px center",
+        end: "bottom center",
+        onEnter: () => highlight.classList.add("show"),
+        onLeaveBack: () => highlight.classList.remove("show"),
+      }
+      );
+    });
+
   </script>
 
 </body>
