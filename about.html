@@ -48,7 +48,7 @@
     }
 
     .inner-header {
-      height: 90vh;
+      height: 95vh;
       width: 100%;
       margin: 0;
       padding: 0;
@@ -250,6 +250,13 @@
     .second-info {
       padding-top: 150px;
       padding-left: 90px;
+    }
+
+    @media (max-width:64em) {
+      .second-info {
+        padding-left: 10px;
+        padding-right: 90px;
+      }
     }
 
     .second-info .cd-timeline-block:nth-child(2) {
@@ -521,7 +528,7 @@
     }
   </style>
 
-  <div class="scroller show-desktop">
+  <div class="scroller">
     <div class="red-box" id="highlight-style">
       <div style="z-index: 2;" class="position-relative">
         <h3><span class="text-highlight">20 años en la industria</span> desarrollando y <br> comercializando software
@@ -575,7 +582,7 @@
           </div> <!-- cd-timeline-block -->
         </div>
 
-        <div class="col-md-4 pro">
+        <div class="col-md-4 pro show-desktop">
           <div class="c-animation-wrapper js-scrub-controlled-animation-wrapper">
             <div class="c-animation js-scrub-controlled-animation"
               data-animation-source="https://lottie.host/fc2e91bd-3f83-4a14-8cbf-188ef5716fea/Vn8D31x16N.json">
@@ -819,7 +826,7 @@
         const scrubAnimationTimeline = gsap.timeline({}).to(
           { frame: 0 },
           {
-            duration: 20,
+            duration: 1,
             frame: animation.totalFrames - 30,
             onUpdate: function () {
               animation.goToAndStop(Math.round(this.targets()[0].frame), true);
@@ -833,11 +840,10 @@
           trigger: ".pro",
           animation: scrubAnimationTimeline,
           // markers: true,
-          start: "top+=200 center",
-          end: "bottom+=100 bottom",
+          start: "top+=220 center",
+          end: "bottom+=400 bottom",
           scrub: 0.1,
           pin: true,
-          markers: true,
         });
       }
     }
