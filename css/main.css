@@ -1234,6 +1234,22 @@ canvas {
   background: #038FE3;
 }
 
+.p-logo.crm {
+  background: #008A88;
+}
+
+.p-logo.taller {
+  background: #2E2E2E;
+}
+
+.p-logo.obras {
+  background: #7B0190;
+}
+
+.p-logo.pos {
+  background: #FCCF00;
+}
+
 .prodSwiper .swiper-button-next,
 .prodSwiper .swiper-button-prev {
   border: 1px solid var(--black);
