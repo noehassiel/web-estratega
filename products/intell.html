@@ -1,14 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estratega Sistemas</title>
+  <title>Estratega / Intelligence</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JDL8TR4RBM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-JDL8TR4RBM');
+  </script>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Meta -->
-  <meta name="description" content="El arte de dirigir tu empresa hecho software">
+  <meta name="description" content="Estratega Sistemas">
   <meta name="author" content="Estratega Sistemas">
   <meta name="robots" content="follow, index" />
   <meta name="keywords"
@@ -19,8 +30,11 @@
   <meta property="og:title" content="Estratega Sistemas">
   <meta property="og:type" content="">
   <meta property="og:url" content="estratega-sistemas.com">
-  <meta property="og:image" content="/tile-wide.png">
+  <meta property="og:image" content="../tile-wide.png">
   <meta property="og:description" content="El arte de dirigir tu empresa hecho software">
+
+  <!--Human TXT-->
+  <link type="text/plain" rel="author" href="humans.txt" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -28,68 +42,33 @@
   <link rel="manifest" href="/site.webmanifest">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
-
   <!-- Place favicon.ico in the root directory -->
-
   <meta name="theme-color" content="#fafafa">
-
-  <!--Human TXT-->
-  <link type="text/plain" rel="author" href="humans.txt" />
 
   <!--Bundle CSS-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <!--Main CSS-->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="../css/locomotive-scroll.css">
 
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
-  <style>
-    body {
-      overflow-y: scroll;
-      overflow-x: hidden;
-    }
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/product.css">
+  <link rel="stylesheet" href="../css/cards.css">
 
-    .scroll {
-      height: auto;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      z-index: 1;
-      padding-top: 20vh;
-    }
 
-    .circle {
-      width: 20px;
-      height: 20px;
-      border-radius: 40%;
-      opacity: 0;
-      margin: -19px auto;
-      transition: transform 1s cubic-bezier(0.14, 0.15, 0.13, 0.99);
-    }
-
-    .c-animation-wrapper {
-      display: flex;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-      padding-top: 0;
-    }
-
-    .c-animation {
-      max-width: 660px;
-    }
-  </style>
 </head>
 
 <body>
 
+  <div class="overlay-l">
+    <div id="icon-container" style="height: 250px;"></div>
+  </div>
+
   <nav>
-    <a href="index.html">
-      <svg id="logo" class="logo l-r" height="auto" width="200px" viewBox="0 0 1967 396" fill="#000000">
+    <a href="../index.html">
+      <svg id="logo" class="logo" height="auto" width="200px" viewBox="0 0 1967 396" fill="#000000">
         <path
           d="M111.908 55.0918C144.813 55.0918 170.851 65.6155 190.021 86.7125C209.191 107.809 218.776 136.96 218.776 174.164V183.008H60.3758C62.7968 202.968 70.2572 218.334 82.8067 229.154C95.3562 239.925 112.55 245.31 134.437 245.31C148.519 245.31 162.056 242.889 175.05 237.998C188.044 233.107 201.533 225.745 215.416 215.814V259.688C189.23 278.215 157.412 287.504 120.06 287.504C84.7337 287.504 55.9291 276.881 33.5476 255.636C11.166 234.391 0 206.13 0 170.804C0 136.762 10.3261 108.995 31.0278 87.4043C51.6801 65.9121 78.6565 55.0918 111.908 55.0918ZM163.39 147.385C161.809 131.08 156.819 118.333 148.519 109.143C140.218 99.9537 128.805 95.3588 114.23 95.3588C99.3582 95.3588 87.451 99.7561 78.4095 108.551C69.3679 117.345 63.6861 130.29 61.2651 147.385H163.39Z"
           fill="white" />
@@ -120,10 +99,10 @@
       </svg>
     </a>
     <div class="d-flex align-items-center position-relative show-desktop">
-      <a class="nav-link" href="index.html">Inicio</a>
+      <a class="nav-link" href="../index.html">Inicio</a>
       <!--
-        <a class="nav-link" href="">Somos</a>
-        -->
+    <a class="nav-link" href="">Somos</a>
+    -->
       <button type="button" class="nav-link drop" style="background: none; border:none;" data-bs-toggle="dropdown"
         aria-expanded="false">
         Productos
@@ -131,24 +110,24 @@
       </button>
       <ul class="dropdown-menu dropdown-menu-end mt-3">
         <li>
-          <a class="dropdown-item link-item" type="button" href="products/magnus.html"> Magnus</a>
+          <a class="dropdown-item link-item" href="../products/magnus.html"> Magnus</a>
         </li>
         <li>
-          <a class="dropdown-item link-item" type="button" href="products/simac.html">Simac</a>
+          <a class="dropdown-item link-item" href="../products/simac.html">Simac</a>
         </li>
         <li>
-          <a class="dropdown-item link-item" type="button" href="products/magnus-lite.html"> Magnus Lite</a>
+          <a class="dropdown-item link-item" href="../products/magnus-lite.html"> Magnus Lite</a>
         </li>
         <li>
-          <a class="dropdown-item link-item" type="button" href="products/conta.html">Conta</a>
+          <a class="dropdown-item link-item" href="../products/conta.html">Conta</a>
         </li>
         <li>
-          <a class="dropdown-item link-item" type="button" href="products/soporte.html">Soporte y Suscripciones</a>
+          <a class="dropdown-item link-item" href="../products/soporte.html">Soporte y Suscripciones</a>
         </li>
       </ul>
       <!--
-        <a class="nav-link" href="">Contacto</a>
-        -->
+    <a class="nav-link" href="">Contacto</a>
+    -->
       <a class="button dark-button" href="http://sstratega.ddns.net/Soporte-tecnico">
         <div class="button-con">
           <div class="button-txt">
@@ -173,7 +152,7 @@
   <div class="nav-movil show-responsive">
     <div class="nav-movil d-flex">
       <div class="bar position-absolute top-0 mt-3 w-100 d-flex justify-content-between px-4 py-3">
-        <a href="index.html">
+        <a href="../index.html">
           <svg id="logo" class="logo" height="80%" width="auto" viewBox="0 0 1967 396" fill="#000000">
             <path
               d="M111.908 55.0918C144.813 55.0918 170.851 65.6155 190.021 86.7125C209.191 107.809 218.776 136.96 218.776 174.164V183.008H60.3758C62.7968 202.968 70.2572 218.334 82.8067 229.154C95.3562 239.925 112.55 245.31 134.437 245.31C148.519 245.31 162.056 242.889 175.05 237.998C188.044 233.107 201.533 225.745 215.416 215.814V259.688C189.23 278.215 157.412 287.504 120.06 287.504C84.7337 287.504 55.9291 276.881 33.5476 255.636C11.166 234.391 0 206.13 0 170.804C0 136.762 10.3261 108.995 31.0278 87.4043C51.6801 65.9121 78.6565 55.0918 111.908 55.0918ZM163.39 147.385C161.809 131.08 156.819 118.333 148.519 109.143C140.218 99.9537 128.805 95.3588 114.23 95.3588C99.3582 95.3588 87.451 99.7561 78.4095 108.551C69.3679 117.345 63.6861 130.29 61.2651 147.385H163.39Z"
@@ -211,28 +190,27 @@
 
       <div class="movil-links">
         <ul class="list-unstyled text-center">
-          <li><a href="index.html">Inicio</a></li>
+          <li><a href="../index.html">Inicio</a></li>
           <!--
-            <li><a href="">Somos</a></li>
-            -->
+          <li><a href="">Somos</a></li>
+          -->
           <li>
             <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-              aria-controls="collapseExample"
-              class="d-flex align-items-center justify-content-center">Productos<ion-icon
+              aria-controls="collapseExample" class="d-flex align-items-center">Productos<ion-icon
                 name="chevron-down-outline"></ion-icon></a>
             <div class="collapse my-3" id="collapseExample">
               <ul class="list-unstyled">
-                <li><a href="products/magnus.html">Magnus</a></li>
-                <li><a href="products/simac.html">Simac</a></li>
-                <li><a href="products/magnus-lite.html">Magnus Lite</a></li>
-                <li><a href="products/conta.html">Conta</a></li>
-                <li><a href="products/soporte.html">Soporte</a></li>
+                <li><a href="../products/magnus.html">Magnus</a></li>
+                <li><a href="../products/simac.html">Simac</a></li>
+                <li><a href="../products/magnus-lite.html">Magnus Lite</a></li>
+                <li><a href="../products/conta.html">Conta</a></li>
+                <li><a href="../products/soporte.html">Soporte</a></li>
               </ul>
             </div>
           </li>
           <!--
-            <li><a href=""> Contacto</a></li>
-            -->
+          <li><a href=""> Contacto</a></li>
+          -->
           <li><a href="http://sstratega.ddns.net/Soporte-tecnico">Iniciar Sesión</a></li>
         </ul>
       </div>
@@ -247,213 +225,297 @@
       <ion-icon name="logo-instagram"></ion-icon>
     </a>
     <!--
-      <a href="">
-        <ion-icon name="logo-linkedin"></ion-icon>
-      </a>
-      -->
+  <a href="">
+    <ion-icon name="logo-linkedin"></ion-icon>
+  </a>
+  -->
   </div>
 
-  <!-- ANIMATION CREDIT:  -->
-  <!-- https://lottiefiles.com/alimograph  -->
+  <div class="smooth-scroll">
 
-  <section class="hero position-relative bg-dark" style="background: #1C1C1E !important;">
-    <div class="hero-m-con">
-      <div class="hero-title d-flex justify-content-center flex-column align-items-center">
-        <h1 class="text-center fw-bold position-relative text-white mb-5 title-1"
-          style="z-index: 20; mix-blend-mode: difference; font-size: 4.4rem;">
-          Nuestra Trayectoria
-        </h1>
-        <lottie-player class="title-2" src="https://lottie.host/97859620-d4fe-4d15-ab29-dfcd8b0f2508/rp5SxjiVWy.json"
-          background="transparent" speed="1" style="width: 70px; height: 70px; opacity: .2;" loop
-          autoplay></lottie-player>
-      </div>
-    </div>
-  </section>
-
-  <section>
-
-  </section>
-
-  <section class="o-section">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-4">
-
-          <div class="cd-timeline-block">
-            <div class="cd-timeline-content">
-              <h2>Title of section 1</h2>
-            </div> <!-- cd-timeline-content -->
-          </div> <!-- cd-timeline-block -->
-
-          <div class="cd-timeline-block">
-            <div class="cd-timeline-content">
-              <h2>Title of section 2</h2>
-            </div> <!-- cd-timeline-content -->
-          </div> <!-- cd-timeline-block -->
-
-          <div class="cd-timeline-block">
-            <div class="cd-timeline-content">
-              <h2>Title of section 3</h2>
-            </div> <!-- cd-timeline-content -->
-          </div> <!-- cd-timeline-block -->
-
-          <div class="cd-timeline-block">
-            <div class="cd-timeline-content">
-              <h2>Title of section 4</h2>
-            </div> <!-- cd-timeline-content -->
-          </div> <!-- cd-timeline-block -->
-        </div>
-
-        <div class="col-md-4 pro">
-          <div class="c-animation-wrapper js-scrub-controlled-animation-wrapper">
-            <div class="c-animation js-scrub-controlled-animation"
-              data-animation-source="https://lottie.host/fc2e91bd-3f83-4a14-8cbf-188ef5716fea/Vn8D31x16N.json">
+    <section id="name" class="s-section feature-top">
+      <div class="s-con feature-top s-black">
+        <div class="s-content">
+          <div class="row s-indent-sdt feature-top">
+            <div class="col-5 col-md-2 d-flex justify-content-center align-items-center">
+              <img class="logo" src="../img/icon/INTELLIGENCE.svg" alt="">
+            </div>
+            <div class="col-7 col-md-6 offset-md-1">
+              <h1 class="text-uppercase">Magnus</h1>
+              <h4 class="text-muted text-uppercase">Intelligence</h4>
+            </div>
+            <div class="col-md-6 mt-5 offset-md-3">
+              <div class="px-4 px-md-0">
+                <h6 class="mb-5">
+                  Realiza y supervisa los indicadores de acorde a las metas. Da seguimiento a los resultados de tu
+                  negocio para que funcione con éxito.
+                </h6>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="col-md-4">
-
-          <div class="cd-timeline-block">
-            <div class="cd-timeline-content">
-              <h2>Title of section 1</h2>
-            </div> <!-- cd-timeline-content -->
-          </div> <!-- cd-timeline-block -->
-
-          <div class="cd-timeline-block">
-            <div class="cd-timeline-content">
-              <h2>Title of section 2</h2>
-            </div> <!-- cd-timeline-content -->
-          </div> <!-- cd-timeline-block -->
-
-          <div class="cd-timeline-block">
-            <div class="cd-timeline-content">
-              <h2>Title of section 3</h2>
-            </div> <!-- cd-timeline-content -->
-          </div> <!-- cd-timeline-block -->
-
-          <div class="cd-timeline-block">
-            <div class="cd-timeline-content">
-              <h2>Title of section 4</h2>
-            </div> <!-- cd-timeline-content -->
-          </div> <!-- cd-timeline-block -->
-
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="s-footer">
-    <div class="s-footer-con-1">
-      <div class="w-80">
-        <small class="f-two text-muted d-block text-uppercase mb-2">Oficina general</small>
-        <small class="f-two">P.º de Los Mirlos 202, San Isidro, 37530 León, Gto.</small>
+    <section class="s-section">
+      <div class="s-con s-white s-1">
+        <div class="s-top">
+          <div class="s-title">
+            <h5>Demo</h5>
+          </div>
+        </div>
+        <div class="s-content">
+          <div class="s-indent">
+
+          </div>
+        </div>
       </div>
-      <a href="">
-        <img src="img/ee.png" style="width: 250px;" alt="">
-      </a>
-      <div class="w-80">
-        <small class="text-muted">Facilitamos el control de tus procesos, mediante una metodología secuencial para el
-          análisis estratégico de tu
-          organización</small>
+    </section>
+
+    <section class="s-section mt-4">
+      <div class="s-con s-2">
+        <div class="s-indent row justify-content-center py-5">
+          <div class="col-md-8">
+            <h3>Interfaz amigable e integridad en un solo click</h3>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="s-footer-con-2">
-      <div class="s-footer-block" id="fBlockOne">
-        <div class="s-f-block-title">
-          <small class="text-uppercase">Productos</small>
+    </section>
+
+    <section class="s-section products-s">
+      <div class="s-con s-white s-3">
+        <div class="s-top">
+          <div class="s-title">
+            <h5>Nuestros módulos adicionales ¡harán tu vida más fácil!</h5>
+          </div>
         </div>
-        <div class="footer-links">
-          <ul class="list-unstyled">
-            <li>
-              <a href="products/magnus.html"><small class="text-uppercase">Magnus Erp</small></a>
-            </li>
-            <li>
-              <a href="products/simac.html"><small class="text-uppercase">Simac mrp</small></a>
-            </li>
-            <li>
-              <a href="products/magnus-lite.html"><small class="text-uppercase">Magnus Lite</small></a>
-            </li>
-            <li>
-              <a href="products/conta.html"><small class="text-uppercase">Conta</small></a>
-            </li>
-            <!--
-                <li>
-                  <a href=""><small class="text-uppercase">Simac mrp</small></a>
-                </li>
-                <li>
-                  <a href=""><small class="text-uppercase">Simac mrp</small></a>
-                </li>
-                <li>
-                  <a href=""><small class="text-uppercase">Simac mrp</small></a>
-                </li>
-                -->
-            <li>
-              <a href="products/soporte.html"><small class="text-uppercase">Soporte y Suscripciones</small></a>
-            </li>
-          </ul>
+        <div class="s-content">
+          <div class="row s-indent">
+            <div class="col-md-12">
+              <!-- Swiper -->
+              <div class="swiper prodSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product-slide">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <a href="products/magnus.html" class="p-logo magnus">
+                            <img src="img/icon/g.png" alt="">
+                          </a>
+                          <h5>MAGNUS ERP</h5>
+                          <a class="button black-button" href="products/magnus.html">
+                            <div class="button-con">
+                              <div class="button-txt">
+                                Conoce más
+                              </div>
+                              <div class="button-arrow-con">
+                                <div class="d-flex justify-content-center align-items-center button-icon">
+                                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="on-hover"></div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-slide">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <a href="products/simac.html" class="p-logo simac">
+                            <img src="img/icon/m.png" alt="">
+                          </a>
+                          <h5>SIMAC MRP</h5>
+                          <a class="button black-button d-inline-block" href="products/simac.html">
+                            <div class="button-con">
+                              <div class="button-txt">
+                                Conoce más
+                              </div>
+                              <div class="button-arrow-con">
+                                <div class="d-flex justify-content-center align-items-center button-icon">
+                                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="on-hover"></div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-slide">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <a href="products/magnus-lite.html" class="p-logo m-light">
+                            <img src="img/icon/g.png" alt="">
+                          </a>
+                          <h5>MAGNUS LITE</h5>
+                          <a class="button black-button" href="products/magnus-lite.html">
+                            <div class="button-con">
+                              <div class="button-txt">
+                                Conoce más
+                              </div>
+                              <div class="button-arrow-con">
+                                <div class="d-flex justify-content-center align-items-center button-icon">
+                                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="on-hover"></div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-slide">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <a href="products/conta.html" class="p-logo conta">
+                            <img src="img/icon/g.png" alt="">
+                          </a>
+                          <h5>CONTA</h5>
+                          <a class="button black-button" href="products/conta.html">
+                            <div class="button-con">
+                              <div class="button-txt">
+                                Conoce más
+                              </div>
+                              <div class="button-arrow-con">
+                                <div class="d-flex justify-content-center align-items-center button-icon">
+                                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="on-hover"></div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="footer-block-bg"></div>
       </div>
-      <div class="s-footer-block" id="fBlockTwo">
-        <div class="s-f-block-title">
-          <small class="text-uppercase">General</small>
+    </section>
+
+
+    <footer class="s-footer">
+      <div class="s-footer-con-1">
+        <a href="">
+          <img src="img/ee.png" style="width: 250px;" alt="">
+        </a>
+        <div class="w-80">
+          <small class="f-two text-muted d-block text-uppercase mb-2">Oficina general</small>
+          <small class="f-two">P.º de Los Mirlos 202, San Isidro, 37530 León, Gto.</small>
         </div>
-        <div class="footer-links">
-          <ul class="list-unstyled">
-            <li>
-              <a href="index.html"><small class="text-uppercase">Inicio</small></a>
-            </li>
-            <!--
-                <li>
-                  <a href=""><small class="text-uppercase">Acerca de</small></a>
-                </li>
-                <li>
-                  <a href=""><small class="text-uppercase">Contacto</small></a>
-                </li>
-                -->
-          </ul>
-          <a class="d-flex flex-column justify-content-end" href="http://sstratega.ddns.net/Soporte-tecnico"><small
-              class="text-uppercase">Iniciar sesión - Soporte</small></a>
+        <div class="w-80">
+          <small class="text-muted">Facilitamos el control de tus procesos, mediante una metodología secuencial para el
+            análisis estratégico de tu
+            organización</small>
         </div>
-        <div class="footer-block-bg"></div>
       </div>
-      <div class="s-footer-block" id="fBlockThree">
-        <div class="s-f-block-title">
-          <small class="text-uppercase">Social</small>
-        </div>
-        <div class="footer-links">
-          <ul class="list-unstyled">
-            <!--
-                <li>
-                  <a href=""><small class="text-uppercase">LinkedIn</small></a>
-                </li>
-                -->
+      <div class="s-footer-con-2">
+        <div class="s-footer-block" id="fBlockOne">
+          <div class="s-f-block-title">
+            <small class="text-uppercase">Productos</small>
+          </div>
+          <div class="footer-links">
+            <ul class="list-unstyled">
+              <li>
+                <a href="../products/magnus.html"><small class="text-uppercase">Magnus Erp</small></a>
+              </li>
+              <li>
+                <a href="../products/simac.html"><small class="text-uppercase">Simac mrp</small></a>
+              </li>
+              <li>
+                <a href="../products/magnus-lite.html"><small class="text-uppercase">Magnus Lite</small></a>
+              </li>
+              <li>
+                <a href="../products/conta.html"><small class="text-uppercase">Conta</small></a>
+              </li>
+              <!--
             <li>
-              <a href="https://www.facebook.com/estratega.sistemas"><small class="text-uppercase">Facebook</small></a>
+              <a href=""><small class="text-uppercase">Simac mrp</small></a>
             </li>
             <li>
-              <a href="https://instagram.com/estratega_sistemas?igshid=YmMyMTA2M2Y="><small
-                  class="text-uppercase">Instagram</small></a>
+              <a href=""><small class="text-uppercase">Simac mrp</small></a>
             </li>
-          </ul>
+            <li>
+              <a href=""><small class="text-uppercase">Simac mrp</small></a>
+            </li>
+            -->
+              <li>
+                <a href="../products/soporte.html"><small class="text-uppercase">Soporte y Suscripciones</small></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-block-bg"></div>
         </div>
-        <div class="footer-block-bg"></div>
+        <div class="s-footer-block" id="fBlockTwo">
+          <div class="s-f-block-title">
+            <small class="text-uppercase">General</small>
+          </div>
+          <div class="footer-links">
+            <ul class="list-unstyled">
+              <li>
+                <a href="../index.html"><small class="text-uppercase">Inicio</small></a>
+              </li>
+              <!--
+            <li>
+              <a href=""><small class="text-uppercase">Acerca de</small></a>
+            </li>
+            <li>
+              <a href=""><small class="text-uppercase">Contacto</small></a>
+            </li>
+            -->
+            </ul>
+            <a class="d-flex flex-column justify-content-end" href="http://sstratega.ddns.net/Soporte-tecnico"><small
+                class="text-uppercase">Iniciar sesión - Soporte</small></a>
+          </div>
+          <div class="footer-block-bg"></div>
+        </div>
+        <div class="s-footer-block" id="fBlockThree">
+          <div class="s-f-block-title">
+            <small class="text-uppercase">Social</small>
+          </div>
+          <div class="footer-links">
+            <ul class="list-unstyled">
+              <!--
+            <li>
+              <a href=""><small class="text-uppercase">LinkedIn</small></a>
+            </li>
+            -->
+              <li>
+                <a href="https://www.facebook.com/estratega.sistemas"><small class="text-uppercase">Facebook</small></a>
+              </li>
+              <li>
+                <a href="https://instagram.com/estratega_sistemas?igshid=YmMyMTA2M2Y="><small
+                    class="text-uppercase">Instagram</small></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-block-bg"></div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+
+  </div>
 
   <!--Bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
     crossorigin="anonymous"></script>
-
-  <!--JQUERY-->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
@@ -469,102 +531,111 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+  <!--Locomotive-->
+  <script src="../js/locomotive-scroll.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
 
   <!--Main JS-->
-  <script src="js/jquerys.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/jquerys.js"></script>
 
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/ScrollLottie.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.6/lottie.min.js"></script>
+  <!-- COLOR -->
+  <script src="../js/intell.js"></script>
+  <script id="snoise-function" type="x-shader/x-vertex">
+              vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+              vec2 mod289(vec2 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+              vec3 permute(vec3 x) { return mod289(((x*34.0)+1.0)*x); }
 
-  <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+              float snoise(vec2 v) {
+                  const vec4 C = vec4(0.211324865405187,  // (3.0-sqrt(3.0))/6.0
+                                      0.366025403784439,  // 0.5*(sqrt(3.0)-1.0)
+                                      -0.577350269189626,  // -1.0 + 2.0 * C.x
+                                      0.024390243902439); // 1.0 / 41.0
+                  vec2 i  = floor(v + dot(v, C.yy) );
+                  vec2 x0 = v -   i + dot(i, C.xx);
+                  vec2 i1;
+                  i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
+                  vec4 x12 = x0.xyxy + C.xxzz;
+                  x12.xy -= i1;
+                  i = mod289(i); // Avoid truncation effects in permutation
+                  vec3 p = permute( permute( i.y + vec3(0.0, i1.y, 1.0 ))
+                      + i.x + vec3(0.0, i1.x, 1.0 ));
 
-  <script>
-    gsap.registerPlugin(ScrollTrigger);
+                  vec3 m = max(0.5 - vec3(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0);
+                  m = m*m ;
+                  m = m*m ;
+                  vec3 x = 2.0 * fract(p * C.www) - 1.0;
+                  vec3 h = abs(x) - 0.5;
+                  vec3 ox = floor(x + 0.5);
+                  vec3 a0 = x - ox;
+                  m *= 1.79284291400159 - 0.85373472095314 * ( a0*a0 + h*h );
+                  vec3 g;
+                  g.x  = a0.x  * x0.x  + h.x  * x0.y;
+                  g.yz = a0.yz * x12.xz + h.yz * x12.yw;
+                  return 130.0 * dot(m, g);
+              }
+          </script>
+  <script id="vertex-shader" type="x-shader/x-vertex">
+              uniform float u_time;
+              uniform vec2 u_randomisePosition;
 
-    class ScrubControlledAnimation {
-      constructor() {
-        this.DOM = {
-          animationWrapper: ".js-scrub-controlled-animation-wrapper",
-          animation: ".js-scrub-controlled-animation",
-          states: {}
-        };
+              varying float vDistortion;
+              varying float xDistortion;
+              varying vec2 vUv;
 
-        this.animationWrapper = document.querySelector(this.DOM.animationWrapper);
+              void main() {
+                  vUv = uv;
+                  vDistortion = snoise(vUv.xx * 3. - u_randomisePosition * 0.15);
+                  xDistortion = snoise(vUv.yy * 1. - u_randomisePosition * 0.05);
+                  vec3 pos = position;
+                  pos.z += (vDistortion * 35.);
+                  pos.x += (xDistortion * 25.);
 
-        this.animation = document.querySelector(this.DOM.animation);
+                  gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
+              }
+          </script>
 
-        this.init();
-      }
+  <script id="fragment-shader" type="x-shader/x-fragment">
 
-      init() {
-        console.log("ScrubControlledAnimation init()");
+              vec3 rgb(float r, float g, float b) {
+                  return vec3(r / 255., g / 255., b / 255.);
+              }
 
-        if (this.animation) {
-          this.scrubAnimation();
-        }
-      }
+              vec3 rgb(float c) {
+                  return vec3(c / 255., c / 255., c / 255.);
+              }
 
-      scrubAnimation() {
-        const scrubAnimationOptions = {
-          container: this.animation,
-          renderer: "svg",
-          loop: false,
-          autoplay: false,
-          path: this.animation.getAttribute("data-animation-source")
-        };
+              uniform vec3 u_bg;
+              uniform vec3 u_bgMain;
+              uniform vec3 u_color1;
+              uniform vec3 u_color2;
+              uniform float u_time;
 
-        /**
-         *
-         */
-        let scrubAnimation = lottie.loadAnimation(scrubAnimationOptions);
+              varying vec2 vUv;
+              varying float vDistortion;
 
-        scrubAnimation.addEventListener("DOMLoaded", () => {
-          this.loadAnimation(scrubAnimation);
-        });
-      }
+              void main() {
+                  vec3 bg = rgb(u_bg.r, u_bg.g, u_bg.b);
+                  vec3 c1 = rgb(u_color1.r, u_color1.g, u_color1.b);
+                  vec3 c2 = rgb(u_color2.r, u_color2.g, u_color2.b);
+                  vec3 bgMain = rgb(u_bgMain.r, u_bgMain.g, u_bgMain.b);
 
-      loadAnimation(animation) {
-        const scrubAnimationTimeline = gsap.timeline({}).to(
-          { frame: 0 },
-          {
-            duration: 1,
-            frame: animation.totalFrames - 30,
-            onUpdate: function () {
-              animation.goToAndStop(Math.round(this.targets()[0].frame), true);
-            }
+                  float noise1 = snoise(vUv + u_time * 0.08);
+                  float noise2 = snoise(vUv * 2. + u_time * 0.1);
 
-          },
-          "start"
-        );
+                  vec3 color = bg;
+                  color = mix(color, c1, noise1 * 0.6);
+                  color = mix(color, c2, noise2 * .4);
 
-        ScrollTrigger.create({
-          trigger: ".pro",
-          animation: scrubAnimationTimeline,
-          // markers: true,
-          start: "top center",
-          end: "bottom bottom",
-          scrub: 0.1,
-          pin: true,
-          markers: true,
-        });
-      }
-    }
+                  color = mix(color, mix(c1, c2, vUv.x), vDistortion);
 
-    new ScrubControlledAnimation();
+                  float border = smoothstep(0.1, 0.6, vUv.x);
 
-  </script>
+                  color = mix(color, bgMain, 1. -border);
 
-  <script>
-    let textWrapper = document.querySelector('.title-1')
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-    let textWrapper2 = document.querySelector('.title-2')
-    textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-    let tl = gsap.timeline();
-    tl.to('.title-1 .letter', { opacity: 1, y: '0', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', stagger: '.1' })
-    tl.to('.title-2 .letter', { opacity: 1, y: '0', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', stagger: '.03' }, "-=.7")
-  </script>
+                  gl_FragColor = vec4(color, 1.0);
+              }
+          </script>
 
 </body>
-
-</html>
