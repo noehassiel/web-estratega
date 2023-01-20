@@ -55,7 +55,7 @@
     }
 
     .inner-header {
-      height: 95vh;
+      height: 90vh;
       width: 100%;
       margin: 0;
       padding: 0;
@@ -348,6 +348,18 @@
     .two .cd-timeline-content.show {
       opacity: 1;
       left: 0px;
+    }
+
+    .puntos .element {
+      opacity: 0;
+      position: relative;
+      right: -30px;
+      transition: all .4s ease;
+    }
+
+    .puntos .element.show-fase {
+      opacity: 1;
+      right: 0;
     }
   </style>
 </head>
@@ -700,7 +712,7 @@
   <div id="content">
     <div class="container position-absolute h-100 d-flex flex-column align-items-center"
       style="margin-top: 200px; margin-left: 5%; margin-right: 5%;">
-      <div class="puntos">
+      <div class="puntos" id="fases">
         <div class="element">
           <h2>1</h2>
           <div>
@@ -731,7 +743,7 @@
           </div>
         </div>
       </div>
-      <div class="puntos">
+      <div class="puntos" id="fases">
         <div class="element">
           <h2>2</h2>
           <div>
@@ -762,7 +774,7 @@
           </div>
         </div>
       </div>
-      <div class="puntos">
+      <div class="puntos" id="fases">
         <div class="element">
           <h2>3</h2>
           <div>
@@ -793,7 +805,7 @@
           </div>
         </div>
       </div>
-      <div class="puntos">
+      <div class="puntos" id="fases">
         <div class="element">
           <h2>4</h2>
           <div>
@@ -1147,6 +1159,20 @@
         opacity: 1
       });
 
+    });
+  </script>
+
+  <script>
+    const steps = document.getElementById("fases");
+
+    gsap.utils.toArray(".element").forEach((steps) => {
+      ScrollTrigger.create({
+        trigger: steps,
+        start: "top-=20px center",
+        end: "bottom-=20px center",
+        onEnter: () => steps.classList.add("show-fase"),
+        onLeaveBack: () => steps.classList.remove("show-fase")
+      });
     });
   </script>
 
