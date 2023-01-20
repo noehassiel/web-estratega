@@ -39,6 +39,13 @@
   <!--Bundle CSS-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!--GSAP-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
   <!--Main CSS-->
   <style>
     .header {
@@ -81,6 +88,66 @@
       height: 20vh;
       text-align: center;
       background-color: rgb(255, 255, 255);
+    }
+
+    /*Metodología*/
+
+    .puntos {
+      height: 25%;
+      position: relative;
+      display: flex;
+      width: 55%;
+    }
+
+    .puntos:nth-child(2) {
+      justify-content: flex-end;
+    }
+
+    .puntos:nth-child(4) {
+      justify-content: flex-end;
+    }
+
+    .puntos .element {
+      display: flex;
+    }
+
+    .puntos .element h2 {
+      font-size: 90px;
+    }
+
+    .puntos ul {
+      padding-left: 1rem;
+    }
+
+    .puntos li {
+      display: flex;
+      align-items: center;
+    }
+
+    .red-c {
+      background: var(--red);
+      height: 9px;
+      width: 9px;
+      border-radius: 100px;
+      margin: 0 5px;
+    }
+
+    .red-c.outline {
+      border: 1px solid var(--red);
+      background: none;
+    }
+
+    .green-c {
+      background: var(--green);
+      height: 9px;
+      width: 9px;
+      border-radius: 100px;
+      margin: 0 5px;
+    }
+
+    .green-c.outline {
+      border: 1px solid var(--green);
+      background: none;
     }
 
     /* Animation */
@@ -630,6 +697,136 @@
     </div>
   </section>
 
+  <div id="content">
+    <div class="container position-absolute h-100 d-flex flex-column align-items-center"
+      style="margin-top: 200px; margin-left: 5%; margin-right: 5%;">
+      <div class="puntos">
+        <div class="element">
+          <h2>1</h2>
+          <div>
+            <h6>Etapa Base</h6>
+            <ul>
+              <li>Duración: 8 Semanas</li>
+              <li>
+                Esfuerzo:
+                <div class="d-flex">
+                  <div class="red-c"></div>
+                  <div class="red-c"></div>
+                  <div class="red-c"></div>
+                  <div class="red-c"></div>
+                  <div class="red-c outline"></div>
+                </div>
+              </li>
+              <li>
+                Resultado:
+                <div class="d-flex">
+                  <div class="green-c"></div>
+                  <div class="green-c"></div>
+                  <div class="green-c outline"></div>
+                  <div class="green-c outline"></div>
+                  <div class="green-c outline"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="puntos">
+        <div class="element">
+          <h2>2</h2>
+          <div>
+            <h6>Etapa Operativa</h6>
+            <ul>
+              <li>Duración: 4 Semanas</li>
+              <li>
+                Esfuerzo:
+                <div class="d-flex">
+                  <div class="red-c"></div>
+                  <div class="red-c"></div>
+                  <div class="red-c"></div>
+                  <div class="red-c outline"></div>
+                  <div class="red-c outline"></div>
+                </div>
+              </li>
+              <li>
+                Resultado:
+                <div class="d-flex">
+                  <div class="green-c"></div>
+                  <div class="green-c"></div>
+                  <div class="green-c"></div>
+                  <div class="green-c outline"></div>
+                  <div class="green-c outline"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="puntos">
+        <div class="element">
+          <h2>3</h2>
+          <div>
+            <h6>Etapa Analítica</h6>
+            <ul>
+              <li>Duración: 3 Semanas</li>
+              <li>
+                Esfuerzo:
+                <div class="d-flex">
+                  <div class="red-c"></div>
+                  <div class="red-c"></div>
+                  <div class="red-c outline"></div>
+                  <div class="red-c outline"></div>
+                  <div class="red-c outline"></div>
+                </div>
+              </li>
+              <li>
+                Resultado:
+                <div class="d-flex">
+                  <div class="green-c"></div>
+                  <div class="green-c"></div>
+                  <div class="green-c"></div>
+                  <div class="green-c outline"></div>
+                  <div class="green-c outline"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="puntos">
+        <div class="element">
+          <h2>4</h2>
+          <div>
+            <h6>Etapa Estratégica</h6>
+            <ul>
+              <li>Duración: 1 Semana</li>
+              <li>
+                Esfuerzo:
+                <div class="d-flex">
+                  <div class="red-c"></div>
+                  <div class="red-c outline"></div>
+                  <div class="red-c outline"></div>
+                  <div class="red-c outline"></div>
+                  <div class="red-c outline"></div>
+                </div>
+              </li>
+              <li>
+                Resultado:
+                <div class="d-flex">
+                  <div class="green-c"></div>
+                  <div class="green-c"></div>
+                  <div class="green-c"></div>
+                  <div class="green-c"></div>
+                  <div class="green-c"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="s-footer">
     <div class="s-footer-con-1">
       <div class="w-80">
@@ -748,13 +945,6 @@
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-  <!--GSAP-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
 
   <!--Main JS-->
   <script src="js/jquerys.js"></script>
@@ -875,7 +1065,8 @@
         trigger: ".red-box",
         start: "center center",
         end: "bottom 0",
-        onEnter: () => highlight.classList.add("active-box")
+        onEnter: () => highlight.classList.add("active-box"),
+        onLeaveBack: () => highlight.classList.remove("active-box"),
       }
     });
 
@@ -903,6 +1094,60 @@
       );
     });
 
+  </script>
+
+  <script>
+    const simplex = new SimplexNoise();
+    for (let i = 0; i < 1000; i++) {
+      const div = document.createElement('div');
+      div.classList.add('circle');
+      const n1 = simplex.noise2D(i * 0.003, i * 0.0033);
+      const n2 = simplex.noise2D(i * 0.002, i * 0.001);
+
+      const style = {
+        transform: `translate(${n2 * 200}px) rotate(${n2 * 270}deg) scale(${3 + n1 * 2}, ${3 + n2 * 2})`,
+        boxShadow: `0 0 0 .2px hsla(${Math.floor(i * 0.3)}, 70%, 70%, .6)`
+      };
+
+      Object.assign(div.style, style);
+      content.appendChild(div);
+    }
+    const Circles = document.querySelectorAll('.circle');
+
+
+    /*------------------------------
+    Scroll Trigger
+    var box = gsap.to('.red-box', {
+      scale: 0.75,
+      // delay: 1,
+
+      scrollTrigger: {
+        pin: true,
+        scrub: true,
+        trigger: ".red-box",
+        start: "center center",
+        end: "bottom 0",
+        onEnter: () => highlight.classList.add("active-box")
+      }
+    });
+    ------------------------------*/
+
+
+
+    const main = gsap.timeline({
+      scrollTrigger: {
+        scrub: .7,
+        start: "60% 25%",
+        end: "bottom bottom",
+      }
+    });
+
+    Circles.forEach(circle => {
+      main.to(circle, {
+        opacity: 1
+      });
+
+    });
   </script>
 
 </body>
